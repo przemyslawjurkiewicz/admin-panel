@@ -340,4 +340,45 @@ template {
   display: none;
 }
 
+/* Colors */
+/* Font sizes */
+/* Fonts */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.page__header {
+  margin: 20px 0 15px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #979797;
+}
+
+.section__header {
+  margin: 20px 0 15px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #979797;
+}
+
+.dark-text {
+  margin: 20px 0 15px 15px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333333;
+}
+
+.link {
+  margin: 20px 5px 20px 15px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #56819f;
+  text-decoration: none;
+}
+
+.link--small {
+  font-size: 12px;
+}
+
 /*# sourceMappingURL=style.css.map */
