@@ -340,11 +340,14 @@ template {
   display: none;
 }
 
-/* Colors */
-/* Font sizes */
-/* Fonts */
 * {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.ico {
+  margin-right: 18px;
+  height: 10px;
 }
 
 .page__header {
@@ -377,8 +380,141 @@ template {
   text-decoration: none;
 }
 
+.link:hover {
+  color: #ffa200;
+}
+
 .link--small {
   font-size: 12px;
+}
+
+.button {
+  margin: 20px 0 15px 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  background: #f58220;
+  color: #fff;
+  font-weight: 300;
+}
+
+.button:hover {
+  background: #ffa200;
+}
+
+.button--grey {
+  background: #979797;
+}
+
+.button--grey:hover {
+  background: #bababa;
+}
+
+.button--disabled {
+  background: #e3e3e3;
+}
+
+.button--disabled:hover {
+  background: #e3e3e3;
+  cursor: not-allowed;
+}
+
+.input {
+  margin: 20px 0 15px 15px;
+  padding: 15px;
+  width: 160px;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  color: #333333;
+}
+
+.input::placeholder {
+  color: #bababa;
+}
+
+.input:focus {
+  border: 1px solid #333333;
+}
+
+.input--text {
+  padding-top: 15px;
+  padding-right: 15px;
+  min-width: 160px;
+  min-height: 120px;
+  font-size: 12px;
+}
+
+.input--password {
+  padding-left: 40px;
+  background-image: url("/images/icons/password.svg");
+  background-size: 20px;
+  background-position: 15px 20px;
+  background-repeat: no-repeat;
+}
+
+.input--password:invalid {
+  border: #ff0000;
+}
+
+.checkbox {
+  display: block;
+  padding: 15px;
+  height: 45px;
+  width: 240px;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox__span {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #e3e3e3;
+}
+
+.checkbox__span:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 8px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox:hover {
+  background-color: #e3e3e3;
+  background-image: url("/images/icons/password.svg");
+  background-size: 20px;
+  background-position: 200px 15px;
+  background-repeat: no-repeat;
+}
+
+.checkbox input:checked ~ .checkbox__span {
+  background-color: #04ae00;
+}
+
+.checkbox input:checked ~ .checkbox__span:after {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
