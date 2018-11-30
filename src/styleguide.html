@@ -12,23 +12,51 @@
 <body>
     <h1 class="page__header">Page Header</h1> <br>
     <h2 class="section__header">Section header</h2> <br>
-    <p  class="dark-text">Dark text</p> <br>
+    <p class="dark-text">Dark text</p> <br>
     <a class="link" href="#">large link</a> <br>
     <a class="link link--small" href="#">small link</a> <br>
     <button class="button">Button</button> <br>
     <button class="button button--grey">Button</button> <br>
-    <button class="button button--disabled" disabled><img class="ico" src="/images/icons/links.svg">Disabled button</button> <br>
+    <button class="button button--disabled" disabled><img class="ico" src="/images/icons/links.svg">Disabled button</button>
+    <br>
     <input class="input" placeholder="placeholder"> <br>
-    <textarea class="input input--text"  placeholder="Text input"></textarea><br>
+    <textarea class="input input--text" placeholder="Text input"></textarea><br>
     <input class="input input--password" type="password" placeholder="password"><br>
     <label class="checkbox">check box
         <input type="checkbox" checked="checked">
         <span class="checkbox__span"></span>
-      </label>
+    </label>
 
-    <!-- <object type="image/svg+xml" data="/images/icons/payout.svg" class="svg">
-    <input class="checkbox" type="checkbox" >check box <br>
-    <input class="checkbox checkbox--checked" type="checkbox" checked>marked check box <br> -->
+
+    <table class="table-links col-m-6">
+        <tr class="table-links__row">
+            <td class="table-links__item">Line Header</td>
+            <td class="table-links__item"><a class="link" href="#">link</a> <br></td>
+        </tr>
+        <tr class="table-links__row">
+            <td class="table-links__item">Line Header</td>
+            <td class="table-links__item"><a class="link" href="#">link</a> <br></td>
+        </tr>
+
+        <table class="table-large col-m-6">
+            <thead>
+                <th class="table-large__head"><span class="table-large__span">Column name</span></th>
+                <th class="table-large__head"><span class="table-large__span">Column name</span></th>
+            </thead>
+            <tr class="table-large__row">
+                <td class="table-large__item">12345</td>
+                <td class="table-large__item">12345</td>
+            </tr>
+            <tr class="table-large__row">
+                <td class="table-large__item">12345</td>
+                <td class="table-large__item">12345</td>
+            </tr>
+        </table>
+        <div class="single-list col-m-6">
+            <div class="single-list__item single-list__item--header">Line header</div>
+            <div class="single-list__item">123</div>
+        </div>
+
 </body>
 
 </html>

@@ -3,181 +3,262 @@
 @import "normalize";
 @import "layout";
 
-
 * {
-    font-family: $brand-font;
-    box-sizing: border-box;
+  font-family: $brand-font;
+  box-sizing: border-box;
 }
 
 .ico {
-    margin-right: 18px;
-    height: 10px;
+  margin-right: 18px;
+  height: 10px;
 }
 
-
 .page__header {
-    margin: 20px 0 15px 15px;
-    font-size: $normal-font-size;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: $grey;
+  margin: 20px 0 15px 15px;
+  font-size: $normal-font-size;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $grey;
 }
 
 .section__header {
-    margin: 20px 0 15px 15px;
-    font-size: $normal-font-size;
-    font-weight: 700;
-    color: $grey;
+  margin: 20px 0 15px 15px;
+  font-size: $normal-font-size;
+  font-weight: 700;
+  color: $grey;
 }
 
 .dark-text {
-    margin: 20px 0 15px 15px;
-    font-size: $medium-font-size;
-    font-weight: 300;
-    color: $dark;
+  margin: 20px 0 15px 15px;
+  font-size: $medium-font-size;
+  font-weight: 300;
+  color: $dark;
 }
 
 .link {
-    margin: 20px 5px 20px 15px;
-    font-size: $normal-font-size;
-    font-weight: 300;
-    color: $paleblue;
-    text-decoration: none;
+  margin: 20px 5px 20px 15px;
+  font-size: $normal-font-size;
+  font-weight: 300;
+  color: $paleblue;
+  text-decoration: none;
 
-    &:hover {
-        color: $orange-light;
-    }
+  &:hover {
+    color: $orange-light;
+  }
 
-    &--small {
-        font-size: $small-font-size;
-    }
+  &--small {
+    font-size: $small-font-size;
+  }
 }
 
 .button {
-    margin: 20px 0 15px 15px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 3px;
-    height: 40px;
-    background: $orange;
-    color: #fff;
-    font-weight: 300;
+  margin: 20px 0 15px 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  background: $orange;
+  color: #fff;
+  font-weight: 300;
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: $orange-light;
+  }
+
+  &--grey {
+    background: $grey;
 
     &:hover {
-        background: $orange-light;
+      background: $grey-light;
     }
+  }
 
-    &--grey {
-        background: $grey;
+  &--disabled {
+    background: $lavender;
 
-        &:hover {
-            background: $grey-light;
-        }
+    &:hover {
+      background: $lavender;
+      cursor: not-allowed;
     }
-
-    &--disabled {
-        background: $lavender;
-
-        &:hover {
-            background: $lavender;
-            cursor: not-allowed;
-        }
-    }
+  }
 }
 
 .input {
-    margin: 20px 0 15px 15px;
-    padding: 15px;
-    width: 160px;
-    border: 1px solid $lavender;
-    border-radius: 3px;
-    color: $dark;
+  margin: 20px 0 15px 15px;
+  padding: 15px;
+  width: 160px;
+  border: 1px solid $lavender;
+  border-radius: 3px;
+  color: $dark;
 
-    &::placeholder {
-        color: $grey-light;
+  &::placeholder {
+    color: $grey-light;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $dark;
+  }
+
+  &--text {
+    padding-top: 15px;
+    padding-right: 15px;
+    min-width: 160px;
+    min-height: 120px;
+    font-size: $small-font-size;
+  }
+
+  &--password {
+    padding-left: 40px;
+    background-image: url("/images/icons/password.svg");
+    background-size: 20px;
+    background-position: 15px 20px;
+    background-repeat: no-repeat;
+
+    &:invalid {
+      border: $red;
     }
-
-    &:focus {
-        border: 1px solid $dark;
-    }
-
-    &--text {
-        padding-top: 15px;
-        padding-right: 15px;
-        min-width: 160px;
-        min-height: 120px;
-        font-size: $small-font-size;
-    }
-
-    &--password {
-        padding-left: 40px;
-        background-image: url('/images/icons/password.svg');
-        background-size: 20px;
-        background-position: 15px 20px;
-        background-repeat: no-repeat;
-
-        &:invalid {
-            border: $red;
-        }
-    }
-
+  }
 }
 
 .checkbox {
-    display: block;
-    padding: 15px;
-    height: 45px;
-    width: 240px;
-    position: relative;
-    padding-left: 50px;
-    margin-bottom: 15px;
-    margin-left: 15px;
+  display: block;
+  padding: 15px;
+  height: 45px;
+  width: 240px;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: $medium-font-size;
+  user-select: none;
+  &:focus {
+    outline: none;
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
     cursor: pointer;
-    font-size: $medium-font-size;
-    user-select: none;
+    height: 0;
+    width: 0;
+  }
 
-    input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
+  &__span {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid $lavender;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 8px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
     }
+  }
 
-    &__span {
-        position: absolute;
-        top: 10px;
-        left: 15px;
-        height: 25px;
-        width: 25px;
-        border: 1px solid $lavender;
+  &:hover {
+    background-color: $lavender;
+    background-image: url("/images/icons/show.svg");
+    background-size: 20px;
+    background-position: 200px 13px;
+    background-repeat: no-repeat;
+  }
 
-        &:after {
-            content: "";
-            position: absolute;
-            display: none;
-            left: 8px;
-            top: 5px;
-            width: 5px;
-            height: 10px;
-            border: solid white;
-            border-width: 0 3px 3px 0;
-            transform: rotate(45deg);
-        }
+  input:checked ~ .checkbox__span {
+    background-color: $green;
+    &:after {
+      display: block;
     }
+  }
+}
 
+.table-links {
+  margin: 20px 0 20px 0;
+  border-collapse: collapse;
+  &__item {
+    padding: 20px;
+    border-bottom: 1px solid $lavender;
+    border-top: 1px solid $lavender;
+    font-size: $normal-font-size;
+    font-weight: 700;
+    color: $grey;
+  }
+  &__row {
     &:hover {
-        background-color: $lavender;
-        background-image: url('/images/icons/password.svg');
-        background-size: 20px;
-        background-position: 200px 15px;
-        background-repeat: no-repeat;
+      background: $lavender-light;
     }
+  }
+}
 
-    input:checked~.checkbox__span {
-        background-color: $green;
-        &:after{
-            display: block;
-        }
+.table-large {
+  margin: 20px 0 20px 0;
+  border-collapse: collapse;
+  &__head {
+    padding: 20px;
+    text-align: left;
+  }
+  &__span {
+    padding: 5px 20px 5px 5px;
+    font-weight: 700;
+    color: $grey;
+    font-size: 13px;
+    cursor: pointer;
+    &:hover {
+      background-color: $lavender;
+      border-radius: 3px;
+      color: $dark;
+      background-image: url("/images/icons/arrow-up-small.svg");
+      background-size: 10px;
+      background-position: 95% 50%;
+      background-repeat: no-repeat;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
     }
+  }
+  &__item {
+    padding: 20px;
+    border-bottom: 1px solid $lavender;
+    border-top: 1px solid $lavender;
+    font-size: 13px;
+    font-weight: 300;
+    color: $dark;
+  }
+  &__row {
+    &:hover {
+      background: $lavender-light;
+    }
+  }
+}
+
+.single-list {
+  margin: 20px 0 20px 0;
+  border-bottom: 1px solid $lavender;
+    &__item {
+    text-align: right;
+    padding: 10px 0;
+    font-size: $normal-font-size;
+    &--header {
+      float:left;
+      margin-right: 50px;
+      font-weight: 700;
+      color: $grey;
+      
+    }
+  }
 }
