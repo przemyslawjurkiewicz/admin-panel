@@ -630,6 +630,7 @@ template {
 }
 
 .date-period__input {
+  margin-left: 15px;
   height: 30px;
   border: none;
   background-image: url("/images/icons/calendar.svg");
@@ -639,6 +640,7 @@ template {
 }
 
 .date-period__input--first {
+  margin: 0;
   background-image: none;
   border-right: 1px solid #e3e3e3;
 }
@@ -805,6 +807,44 @@ template {
 
 .top-menu__button:focus {
   outline: none;
+}
+
+.menu {
+  background: #191919;
+  min-width: 180px;
+  max-width: 170px;
+}
+
+.menu__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__hamburger {
+  color: #979797;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu__item:hover {
+  background: #282828;
+  color: #fff;
+}
+
+.menu__icon {
+  margin: 0 20px;
+  width: 15px;
+  height: 15px;
+}
+
+.menu__text {
+  font-size: 14px;
+  color: #979797;
 }
 
 /*# sourceMappingURL=style.css.map */
