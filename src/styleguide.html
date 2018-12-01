@@ -19,6 +19,10 @@
     <button class="button button--grey">Button</button> <br>
     <button class="button button--disabled" disabled><img class="ico" src="/images/icons/links.svg">Disabled button</button>
     <br>
+    <button class="button button--tab"><img class="circle" src="/images/circleBlue.svg">color tab</button>
+    <button class="button button--tab"><img class="circle" src="/images/circleOrange.svg">color tab</button>
+    <button class="button button--tab"><img class="circle" src="/images/circleGreen.svg">color tab</button>
+     <br>
     <input class="input" placeholder="placeholder"> <br>
     <textarea class="input input--text" placeholder="Text input"></textarea><br>
     <input class="input input--password" type="password" placeholder="password"><br>
@@ -27,27 +31,41 @@
         <span class="checkbox__span"></span>
     </label>
 
+    <div class="input date-period">
+    <input class="date-period__input date-period__input--first "  type="date" value="2018-01-01">
+     
+    <input class="date-period__input"  type="date" value="2018-12-01">
+    </div>
 
-    <table class="table-links col-m-6">
+
+    <table class="table-links col-m-4">
         <tr class="table-links__row">
             <td class="table-links__item">Line Header</td>
-            <td class="table-links__item"><a class="link" href="#">link</a> <br></td>
+            <td class="table-links__item"><a class="link" href="#">link</a></td>
+            <td class="table-links__item table-links__item--last"><a href="#"><img class="table-links__icon" src="/images/icons/linksOrange.svg"></a><a href="#"><img class="table-links__icon" src="/images/icons/trash.svg"></a></td>
         </tr>
         <tr class="table-links__row">
             <td class="table-links__item">Line Header</td>
-            <td class="table-links__item"><a class="link" href="#">link</a> <br></td>
+            <td class="table-links__item"><a class="link" href="#">link</a></td>
+            <td class="table-links__item table-links__item--last"><a href="#"><img class="table-links__icon" src="/images/icons/linksOrange.svg"></a><a href="#"><img class="table-links__icon" src="/images/icons/trash.svg"></a></td>
         </tr>
 
         <table class="table-large col-m-6">
             <thead>
                 <th class="table-large__head"><span class="table-large__span">Column name</span></th>
                 <th class="table-large__head"><span class="table-large__span">Column name</span></th>
+                <th class="table-large__head"><span class="table-large__span">Column name</span></th>
+                <th class="table-large__head"><span class="table-large__span">Column name</span></th>
             </thead>
             <tr class="table-large__row">
                 <td class="table-large__item">12345</td>
                 <td class="table-large__item">12345</td>
+                <td class="table-large__item">12345</td>
+                <td class="table-large__item">12345</td>
             </tr>
             <tr class="table-large__row">
+                <td class="table-large__item">12345</td>
+                <td class="table-large__item">12345</td>
                 <td class="table-large__item">12345</td>
                 <td class="table-large__item">12345</td>
             </tr>
@@ -56,7 +74,7 @@
             <div class="single-list__item single-list__item--header">Line header</div>
             <div class="single-list__item">123</div>
         </div>
-
+        <script src="../js/script.js"></script>
 </body>
 
 </html>
