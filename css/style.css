@@ -458,7 +458,7 @@ template {
 }
 
 .link {
-  margin: 20px 5px 20px 15px;
+  margin: 20px 20px 20px 0;
   font-size: 16px;
   font-weight: 300;
   color: #56819f;
@@ -757,6 +757,54 @@ template {
   margin-right: 50px;
   font-weight: 700;
   color: #979797;
+}
+
+.top-menu {
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  margin: 0;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top-menu__vl {
+  border-left: 1px solid #e3e3e3;
+  height: 100%;
+}
+
+.top-menu__money {
+  font-size: 20px;
+  font-weight: 500;
+  color: #979797;
+}
+
+.top-menu__icon {
+  margin: 0 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.top-menu__icon--button {
+  margin: 0;
+}
+
+.top-menu__button {
+  background: none;
+  border: none;
+  width: 60px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.top-menu__button:hover {
+  background: #e3e3e3;
+}
+
+.top-menu__button:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */
