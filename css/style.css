@@ -665,6 +665,7 @@ template {
 
 .table-links {
   margin: 20px 0 20px 0;
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -981,7 +982,13 @@ template {
 
 .section {
   padding: 18px;
-  margin: 58px 0 18px 16.66%;
+  padding-top: 0;
+  margin-left: 16.66%;
+}
+
+.section--first {
+  padding: 18px;
+  margin: 58px 0 0 16.66%;
 }
 
 .section--mini {

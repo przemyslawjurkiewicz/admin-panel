@@ -23,9 +23,14 @@
 
 .section {
   padding: 18px;
-  margin: 58px 0 18px 16.66%;
+  padding-top: 0;
+  margin-left: 16.66%;
 
-  //margin-left: 16.66%;
+  &--first {
+    padding: 18px;
+    margin: 58px 0 0 16.66%;
+  }
+
   &--mini {
     margin: 58px 0 5px 8.33%;
 
@@ -102,7 +107,7 @@
     font-size: $small-font-size;
   }
 
-  
+
   .section__header {
     font-size: $small-font-size;
   }

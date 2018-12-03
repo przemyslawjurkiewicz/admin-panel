@@ -41,7 +41,9 @@
     topMenu.classList.toggle('col-m-11');
     section.classList.toggle('col-m-10');
     section.classList.toggle('col-m-11');
-    section.classList.toggle('section--mini');
+    for (var i = 0; i < section.length; i++) {
+      section[i].classList.toggle('section--mini');
+    }
     for (var i = 0; i < logo.length; i++) {
       logo[i].classList.toggle('menu__logo--mini');
     }
