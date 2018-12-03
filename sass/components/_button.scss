@@ -1,0 +1,45 @@
+.button {
+    margin: 20px 0 15px 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    background: $orange;
+    color: #fff;
+    font-weight: 300;
+    &:focus {
+      outline: none;
+    }
+  
+    &:hover {
+      background: $orange-light;
+    }
+  
+    &--grey {
+      background: $grey;
+  
+      &:hover {
+        background: $grey-light;
+      }
+    }
+  
+    &--disabled {
+      background: $lavender;
+  
+      &:hover {
+        background: $lavender;
+        cursor: not-allowed;
+      }
+    }
+  
+    &--tab {
+      background: inherit;
+      color: $grey-light;
+      &:hover {
+        background: $lavender-light;
+      }
+    }
+    &--active {
+      background: $lavender-light;
+    }
+  }

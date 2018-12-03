@@ -2,6 +2,7 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
+@import "./sass/components/button";
 
 * {
   font-family: $brand-font;
@@ -10,10 +11,6 @@
 
 .general {
   background: $lavender-light;
-}
-
-.navigation {
-  position: fixed;
 }
 
 .ico {
@@ -65,51 +62,7 @@
   }
 }
 
-.button {
-  margin: 20px 0 15px 15px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 3px;
-  height: 40px;
-  background: $orange;
-  color: #fff;
-  font-weight: 300;
-  &:focus {
-    outline: none;
-  }
 
-  &:hover {
-    background: $orange-light;
-  }
-
-  &--grey {
-    background: $grey;
-
-    &:hover {
-      background: $grey-light;
-    }
-  }
-
-  &--disabled {
-    background: $lavender;
-
-    &:hover {
-      background: $lavender;
-      cursor: not-allowed;
-    }
-  }
-
-  &--tab {
-    background: inherit;
-    color: $grey-light;
-    &:hover {
-      background: $lavender-light;
-    }
-  }
-  &--active {
-    background: $lavender-light;
-  }
-}
 
 .input {
   margin: 20px 0 15px 15px;
@@ -492,10 +445,16 @@
       width: 20px;
       height: auto;
     }
-    &__text--manager{
+    &__text{
       font-size: 8px;
-    }  
-    
+    }
+      
+  }
+  .link {
+    &--small {
+      margin: 0;
+      font-size: 8px;
+    }
   }
 }
 @media (max-height: 500px) {
@@ -519,10 +478,5 @@
       font-size: 8px;
     }
   }
-  .link {
-    &--small {
-      margin: 0;
-      font-size: 8px;
-    }
-  }
+  
 }
