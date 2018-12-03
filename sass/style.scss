@@ -488,6 +488,14 @@
         display: none;
       }
     }
+    &__manager-image{
+      width: 20px;
+      height: auto;
+    }
+    &__text--manager{
+      font-size: 8px;
+    }  
+    
   }
 }
 @media (max-height: 500px) {
@@ -512,11 +520,8 @@
     }
   }
   .link {
-    font-size: $normal-font-size;
-    font-weight: 300;
-    color: $paleblue;
-    text-decoration: none;
     &--small {
+      margin: 0;
       font-size: 8px;
     }
   }
