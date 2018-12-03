@@ -338,7 +338,7 @@ template { display: none; }
 
 .sections--first { padding: 18px; margin: 58px 0 0 16.66%; }
 
-.sections--mini { margin: 58px 0 5px 8.33%; }
+.sections--mini { margin-left: 8.33%; }
 
 .sections__container { text-align: center; padding: 8px 0; background: #fff; }
 
