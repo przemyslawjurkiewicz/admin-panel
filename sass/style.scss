@@ -21,7 +21,7 @@
   background: $lavender-light;
 }
 
-.section {
+.sections {
   padding: 18px;
   padding-top: 0;
   margin-left: 16.66%;
@@ -119,13 +119,13 @@
     }
   }
 
-  .section {
+  .sections {
     padding: 0;
     margin: 0;
 
     //margin-left: 16.66%;
     &--mini {
-      padding: 0 0 0 8.33%;
+      padding: 5px 0 0 8.33%;
       margin: 0;
 
     }

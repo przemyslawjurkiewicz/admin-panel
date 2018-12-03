@@ -4,7 +4,7 @@
   var hamburger = document.getElementById('hamburger');
   var menu = document.getElementById('menu');
   var topMenu = document.getElementById('top-menu');
-  var section = document.getElementById('section');
+  var section = document.getElementsByClassName('sections');
   var logo = document.getElementsByClassName('menu__logo');
   var icons = document.getElementsByClassName('menu__icon');
   var text = document.getElementsByClassName('menu__text');
@@ -39,10 +39,11 @@
     topMenu.classList.toggle('top-menu--mini');
     topMenu.classList.toggle('col-m-10');
     topMenu.classList.toggle('col-m-11');
-    section.classList.toggle('col-m-10');
-    section.classList.toggle('col-m-11');
+   
     for (var i = 0; i < section.length; i++) {
-      section[i].classList.toggle('section--mini');
+      section[i].classList.toggle('sections--mini');
+      section[i].classList.toggle('col-m-10');
+      section[i].classList.toggle('col-m-11');
     }
     for (var i = 0; i < logo.length; i++) {
       logo[i].classList.toggle('menu__logo--mini');

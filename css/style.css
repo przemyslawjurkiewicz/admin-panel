@@ -980,34 +980,34 @@ template {
   background: #f5f5f2;
 }
 
-.section {
+.sections {
   padding: 18px;
   padding-top: 0;
   margin-left: 16.66%;
 }
 
-.section--first {
+.sections--first {
   padding: 18px;
   margin: 58px 0 0 16.66%;
 }
 
-.section--mini {
+.sections--mini {
   margin: 58px 0 5px 8.33%;
 }
 
-.section__container {
+.sections__container {
   text-align: center;
   padding: 8px 0;
   background: #fff;
 }
 
-.section__row {
+.sections__row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section__hr {
+.sections__hr {
   border: 1px solid #e3e3e3;
 }
 
@@ -1069,18 +1069,18 @@ template {
     margin: 0;
     font-size: 8px;
   }
-  .section {
+  .sections {
     padding: 0;
     margin: 0;
   }
-  .section--mini {
-    padding: 0 0 0 8.33%;
+  .sections--mini {
+    padding: 5px 0 0 8.33%;
     margin: 0;
   }
-  .section__row {
+  .sections__row {
     flex-direction: column;
   }
-  .section__row--always-row {
+  .sections__row--always-row {
     flex-direction: row;
   }
 }
