@@ -1,23 +1,37 @@
 "use strict";
-(function() {
-  var buttonsTab = document.getElementsByClassName("button--tab");
+(function () {
+  var buttonsTab = document.getElementsByClassName('button--tab');
   var hamburger = document.getElementById('hamburger');
   var menu = document.getElementById('menu');
   var topMenu = document.getElementById('top-menu');
-  var logo = document.getElementsByClassName("menu__logo");
-  var icons = document.getElementsByClassName("menu__icon");
-  var text = document.getElementsByClassName("menu__text");
-  var lines = document.getElementsByClassName("menu__line");
-  var mobiles = document.getElementsByClassName("menu__mobile");
-  var manager = document.getElementsByClassName("menu__manager");
-  var items = document.getElementsByClassName("menu__item");
+  var section = document.getElementById('section');
+  var logo = document.getElementsByClassName('menu__logo');
+  var icons = document.getElementsByClassName('menu__icon');
+  var text = document.getElementsByClassName('menu__text');
+  var lines = document.getElementsByClassName('menu__line');
+  var mobiles = document.getElementsByClassName('menu__mobile');
+  var manager = document.getElementsByClassName('menu__manager');
+  var items = document.getElementsByClassName('menu__item');
+
   for (var i = 0; i < buttonsTab.length; i++) {
-    buttonsTab[i].addEventListener("click", function() {
+    buttonsTab[i].addEventListener("click", function () {
       this.classList.toggle("button--active");
     });
   }
 
-  hamburger.addEventListener('click', function() {
+  function whenMobile(media) {
+    if (media.matches) { // If media query matches
+      console.log("mobile");
+      changeMenu();
+    }
+  }
+  var media = window.matchMedia("(max-width: 767px)")
+  whenMobile(media);
+  media.addListener(whenMobile);
+
+  hamburger.addEventListener('click', changeMenu);
+
+  function changeMenu() {
     menu.classList.toggle('col-m-2');
     menu.classList.toggle('col-m-1');
     menu.classList.toggle('col-s-1');
@@ -25,6 +39,9 @@
     topMenu.classList.toggle('top-menu--mini');
     topMenu.classList.toggle('col-m-10');
     topMenu.classList.toggle('col-m-11');
+    section.classList.toggle('col-m-10');
+    section.classList.toggle('col-m-11');
+    section.classList.toggle('section--mini');
     for (var i = 0; i < logo.length; i++) {
       logo[i].classList.toggle('menu__logo--mini');
     }
@@ -46,5 +63,7 @@
     for (var i = 0; i < items.length; i++) {
       items[i].classList.toggle('menu__item--mini');
     }
-  });
+  };
+
+
 })();

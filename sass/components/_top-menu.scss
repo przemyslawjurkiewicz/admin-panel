@@ -1,45 +1,59 @@
 .top-menu {
-    position: fixed;
-    left: 16.66%;
-    border-bottom: 1px solid $lavender;
-    border-top: 1px solid $lavender;
-    margin: 0;
-    height: 60px;
-    background: #fff;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    &__vl {
-      border-left: 1px solid $lavender;
-      height: 100%;
-    }
-    &__money {
-      font-size: 20px;
-      font-weight: 500;
-      color: $grey;
-    }
-    &__icon {
-      margin: 0 20px;
-      width: 20px;
-      height: 20px;
-      &--button {
-        margin: 0;
-      }
-    }
-    &__button {
-      background: none;
-      border: none;
-      width: 60px;
-      height: 100%;
-      cursor: pointer;
-      &:hover {
-        background: $lavender;
-      }
-      &:focus {
-        outline: none;
-      }
-    }
-    &--mini{
-      left: 8.33%;
+  position: fixed;
+  left: 16.66%;
+  border-bottom: 1px solid $lavender;
+  border-top: 1px solid $lavender;
+  margin: 0;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__vl {
+    border-left: 1px solid $lavender;
+    height: 100%;
+  }
+
+  &__money {
+    font-size: 20px;
+    font-weight: 500;
+    color: $grey;
+  }
+
+  &__icon {
+    margin: 0 20px;
+    width: 20px;
+    height: 20px;
+
+    &--button {
+      margin: 0;
     }
   }
+
+  &__button {
+    background: none;
+    border: none;
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+
+    &:hover {
+      background: $lavender;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--mini {
+    left: 8.33%;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-menu {
+    display: none;
+  }
+}

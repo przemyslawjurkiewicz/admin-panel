@@ -5,7 +5,7 @@
       margin-left: 15px;
       height: 30px;
       border: none;
-      background-image: url("images/icons/calendar.svg");
+      background-image: url("../images/icons/calendar.svg");
       background-size: 20px;
       background-position: 120px 4px;
       background-repeat: no-repeat;
@@ -26,9 +26,17 @@
       }
       &::-webkit-clear-button {
         opacity: 0;
+        display: none;
       }
       &:hover {
-        background-image: url("images/icons/calendarBlack.svg");
+        background-image: url("../images/icons/calendarBlack.svg");
       }
     }
+  }
+
+  @media (max-width: 767px) {
+    .date-period {
+      font-size: $small-font-size;
+      padding: 0; 
+  }
   }

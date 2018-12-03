@@ -1,6 +1,6 @@
 .button {
-    margin: 20px 0 15px 15px;
-    padding: 10px 20px;
+    margin: 0 15px;
+    padding: 10px ;
     border: none;
     border-radius: 3px;
     height: 40px;
@@ -13,6 +13,10 @@
   
     &:hover {
       background: $orange-light;
+    }
+    &__icon{
+      width: 20px;
+      height: 20px;
     }
   
     &--grey {
@@ -42,4 +46,33 @@
     &--active {
       background: $lavender-light;
     }
+  }
+
+  
+.ico {
+  margin-right: 18px;
+  height: 10px;
+}
+
+.circle {
+  margin-right: 7px;
+  width: 15px;
+  margin-bottom: -3px;
+}
+
+  @media (max-width: 767px) {
+    .button {
+      height: 20px;
+      padding: 0 5px;
+    
+    &__icon{
+      width: 10px;
+      height: 10px;
+    }
+    &--tab {
+      height: 20px;
+      margin: 5px;
+      font-size: $small-font-size;
+    }
+  }
   }
