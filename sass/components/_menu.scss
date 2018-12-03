@@ -1,0 +1,97 @@
+.menu {
+    position: fixed;
+    background: #191919;
+    margin-right: 18px;
+    min-height: 100%;
+    &__header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &__hamburger {
+      margin: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: $grey;
+      font-size: 24px;
+      &:focus {
+        outline: none;
+      }
+    }
+    &__item {
+      text-decoration: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      &:hover {
+        background: #282828;
+        border-left: 3px solid $orange;
+      }
+      &:hover .menu__text {
+        color: #fff;
+      }
+      &:hover .menu__icon {
+        fill: #fff;
+        margin: 0 20px 0 17px;
+      }
+      &:hover .menu__icon--mini {
+        fill: #fff;
+        margin: 0 0 0 -3px;
+      }
+      &--mobile{
+        justify-content: space-around;
+      }
+      &--mini {
+        justify-content: space-around;
+        height: 40px;
+      }
+    }
+    &__icon {
+      fill: $grey;
+      margin: 0 20px;
+      width: 15px;
+      height: 15px;
+      &--mini {
+        margin: 0;
+    }
+  
+    }
+    &__text {
+      font-size: $medium-font-size;
+      color: $grey;
+      &--manager {
+        margin: 20px;
+        font-weight: 500;
+        text-align: center;
+      }
+      &--mini {
+        display: none;
+      }
+    }
+    &__line {
+      color: $grey;
+      width: 100%;
+      &--mini {
+        display: none;
+      }
+    }
+    &__mobile {
+      position: absolute;
+      bottom: 10px;
+      display: none;
+      &--mini {
+        display: none;
+      }
+    }
+    &__logo {
+      min-width: 0;
+      height: auto;
+      &--mini {
+        display: none;
+      }
+    }
+    &__manager--mini {
+      display: none;
+    }
+  }

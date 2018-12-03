@@ -1,0 +1,41 @@
+.table-large {
+    margin: 20px 0 20px 0;
+    border-collapse: collapse;
+    &__head {
+      padding: 20px;
+      text-align: left;
+    }
+    &__span {
+      padding: 5px 20px 5px 5px;
+      font-weight: 700;
+      color: $grey;
+      font-size: 13px;
+      cursor: pointer;
+      &:hover {
+        background-color: $lavender;
+        border-radius: 3px;
+        color: $dark;
+        background-image: url("images/icons/arrow-up-small.svg");
+        background-size: 10px;
+        background-position: 95% 50%;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+      }
+    }
+    &__item {
+      padding: 20px;
+      border-bottom: 1px solid $lavender;
+      border-top: 1px solid $lavender;
+      font-size: 13px;
+      font-weight: 300;
+      color: $dark;
+    }
+    &__row {
+      &:hover {
+        background: $lavender-light;
+      }
+    }
+  }
