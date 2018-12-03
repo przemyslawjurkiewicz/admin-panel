@@ -22,7 +22,7 @@
     menu.classList.toggle('col-m-1');
     menu.classList.toggle('col-s-1');
     menu.classList.toggle('col-s-6');
-    topMenu.classList.toggle('top-menu--mobile');
+    topMenu.classList.toggle('top-menu--mini');
     topMenu.classList.toggle('col-m-10');
     topMenu.classList.toggle('col-m-11');
     for (var i = 0; i < logo.length; i++) {
@@ -44,7 +44,7 @@
       manager[i].classList.toggle('menu__manager--mini');
     }
     for (var i = 0; i < items.length; i++) {
-      items[i].classList.toggle('menu__item--mobile');
+      items[i].classList.toggle('menu__item--mini');
     }
   });
 })();

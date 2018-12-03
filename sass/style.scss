@@ -374,7 +374,7 @@
       outline: none;
     }
   }
-  &--mobile {
+  &--mini{
     left: 8.33%;
   }
 }
@@ -383,7 +383,7 @@
   position: fixed;
   background: #191919;
   margin-right: 18px;
-  height: 100%;
+  min-height: 100%;
   &__header {
     display: flex;
     justify-content: space-around;
@@ -416,10 +416,14 @@
       fill: #fff;
       margin: 0 20px 0 17px;
     }
-    &--mobile {
-      text-decoration: none;
-      display: flex;
-      align-items: center;
+    &:hover .menu__icon--mini {
+      fill: #fff;
+      margin: 0 0 0 -3px;
+    }
+    &--mobile{
+      justify-content: space-around;
+    }
+    &--mini {
       justify-content: space-around;
       height: 40px;
     }
@@ -431,7 +435,8 @@
     height: 15px;
     &--mini {
       margin: 0;
-    }
+  }
+
   }
   &__text {
     font-size: $medium-font-size;
