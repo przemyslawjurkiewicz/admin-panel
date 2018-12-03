@@ -28,3 +28,12 @@
       margin-right: 15px;
     }
   }
+
+  @media (max-width: 767px) {
+    .table-links {
+      &__item {
+      padding: 10px;
+      font-size: $small-font-size;
+      }
+    }
+  }

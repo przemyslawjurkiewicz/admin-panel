@@ -13,3 +13,11 @@
       }
     }
   }
+
+  @media (max-width: 767px) {
+    .single-list{
+      &__item {
+      font-size: $small-font-size;
+      }
+    }
+  }
