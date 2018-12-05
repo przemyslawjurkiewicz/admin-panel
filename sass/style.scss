@@ -51,11 +51,9 @@
   }
 
   &__hr {
-    //background: $grey;
     border: 1px solid $lavender;
   }
 }
-
 
 .image {
   margin: 20px 0;
@@ -109,13 +107,13 @@
     font-size: $small-font-size;
   }
 
-
   .section__header {
     font-size: $small-font-size;
   }
 
   .link {
     font-size: $small-font-size;
+
     &--small {
       margin: 0;
       font-size: 8px;
@@ -130,7 +128,6 @@
     &--mini {
       padding: 5px 0 0 8.33%;
       margin: 0;
-     
     }
 
     &__row {
