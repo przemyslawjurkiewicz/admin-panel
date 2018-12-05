@@ -4,7 +4,7 @@
   var hamburger = document.getElementById('hamburger');
   var menu = document.getElementById('menu');
   var topMenu = document.getElementById('top-menu');
-  var section = document.getElementsByClassName('sections');
+  var sections = document.getElementsByClassName('sections');
   var logo = document.getElementsByClassName('menu__logo');
   var icons = document.getElementsByClassName('menu__icon');
   var text = document.getElementsByClassName('menu__text');
@@ -12,6 +12,7 @@
   var mobiles = document.getElementsByClassName('menu__mobile');
   var manager = document.getElementsByClassName('menu__manager');
   var items = document.getElementsByClassName('menu__item');
+
 
   for (var i = 0; i < buttonsTab.length; i++) {
     buttonsTab[i].addEventListener("click", function () {
@@ -40,10 +41,10 @@
     topMenu.classList.toggle('col-m-10');
     topMenu.classList.toggle('col-m-11');
    
-    for (var i = 0; i < section.length; i++) {
-      section[i].classList.toggle('sections--mini');
-      section[i].classList.toggle('col-m-10');
-      section[i].classList.toggle('col-m-11');
+    for (var i = 0; i < sections.length; i++) {
+      sections[i].classList.toggle('sections--mini');
+      sections[i].classList.toggle('col-m-10');
+      sections[i].classList.toggle('col-m-11');
     }
     for (var i = 0; i < logo.length; i++) {
       logo[i].classList.toggle('menu__logo--mini');

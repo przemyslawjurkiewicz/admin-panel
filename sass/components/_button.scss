@@ -1,54 +1,58 @@
 .button {
-    margin: 0 15px;
-    padding: 10px ;
-    border: none;
-    border-radius: 3px;
-    height: 40px;
-    background: $orange;
-    color: #fff;
-    font-weight: 300;
-    &:focus {
-      outline: none;
-    }
-  
+  margin: 15px;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  min-width: 40px;
+  background: $orange;
+  color: #fff;
+  font-size: $medium-font-size;
+  font-weight: 300;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: $orange-light;
+  }
+
+  &__icon {
+    font-size: $medium-font-size;
+  }
+
+  &--grey {
+    background: $grey;
+
     &:hover {
-      background: $orange-light;
+      background: $grey-light;
     }
-    &__icon{
-      width: 20px;
-      height: 20px;
-    }
-  
-    &--grey {
-      background: $grey;
-  
-      &:hover {
-        background: $grey-light;
-      }
-    }
-  
-    &--disabled {
+  }
+
+  &--disabled {
+    background: $lavender;
+
+    &:hover {
       background: $lavender;
-  
-      &:hover {
-        background: $lavender;
-        cursor: not-allowed;
-      }
+      cursor: not-allowed;
     }
-  
-    &--tab {
-      background: inherit;
-      color: $grey-light;
-      &:hover {
-        background: $lavender-light;
-      }
-    }
-    &--active {
+  }
+
+  &--tab {
+    background: inherit;
+    color: $grey-light;
+
+    &:hover {
       background: $lavender-light;
     }
   }
 
-  
+  &--active {
+    background: $lavender-light;
+  }
+}
+
+
 .ico {
   margin-right: 18px;
   height: 10px;
@@ -60,19 +64,12 @@
   margin-bottom: -3px;
 }
 
-  @media (max-width: 767px) {
-    .button {
-      height: 20px;
-      padding: 0 5px;
-    
-    &__icon{
-      width: 10px;
-      height: 10px;
-    }
+@media (max-width: 767px) {
+  .button {
     &--tab {
-      height: 20px;
+      height: 30px;
       margin: 5px;
       font-size: $small-font-size;
     }
   }
-  }
+}

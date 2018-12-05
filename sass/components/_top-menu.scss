@@ -23,11 +23,14 @@
 
   &__icon {
     margin: 0 20px;
-    width: 20px;
-    height: 20px;
+    color: $grey;
+    font-size: $normal-font-size;
+    text-decoration: none;
 
     &--button {
       margin: 0;
+      width: 20px;
+    height: 20px;
     }
   }
 

@@ -11,6 +11,7 @@
 @import "./sass/components/top-menu";
 @import "./sass/components/menu";
 @import "./sass/components/single-list";
+@import "./sass/components/glyphter";
 
 * {
   font-family: $brand-font;
@@ -46,6 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
   }
 
   &__hr {
@@ -136,6 +138,7 @@
 
       &--always-row {
         flex-direction: row;
+        flex-wrap: nowrap;
       }
     }
   }
