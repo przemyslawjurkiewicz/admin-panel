@@ -33,18 +33,18 @@
   hamburger.addEventListener('click', changeMenu);
 
   function changeMenu() {
-    menu.classList.toggle('col-m-2');
-    menu.classList.toggle('col-m-1');
-    menu.classList.toggle('col-s-1');
-    menu.classList.toggle('col-s-6');
+    menu.classList.toggle('col-lg-2');
+    menu.classList.toggle('col-lg-1');
+    menu.classList.toggle('col-sm-1');
+    menu.classList.toggle('col-sm-6');
     topMenu.classList.toggle('top-menu--mini');
-    topMenu.classList.toggle('col-m-10');
-    topMenu.classList.toggle('col-m-11');
+    topMenu.classList.toggle('col-lg-10');
+    topMenu.classList.toggle('col-lg-11');
    
     for (var i = 0; i < sections.length; i++) {
       sections[i].classList.toggle('sections--mini');
-      sections[i].classList.toggle('col-m-10');
-      sections[i].classList.toggle('col-m-11');
+      sections[i].classList.toggle('col-lg-10');
+      sections[i].classList.toggle('col-lg-11');
     }
     for (var i = 0; i < logo.length; i++) {
       logo[i].classList.toggle('menu__logo--mini');

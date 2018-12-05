@@ -24,8 +24,17 @@
       }
     }
     &__icon {
-      width: 15px;
-      margin-right: 15px;
+      margin: 5px;
+      color: $grey;
+      text-decoration: none;
+      &:hover{
+        color: $dark;
+      }
+    }
+    &__icon--first {
+      margin: 5px;
+      color: $orange;
+      text-decoration: none;
     }
   }
 
