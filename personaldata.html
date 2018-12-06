@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="personaldata">
+    <nav>
+        <div id="menu" class="menu col-lg-2 col-sm-6">
+            <div class="menu__header">
+                <img class="menu__logo" src="images/logo.png">
+                <button id="hamburger" class="menu__hamburger">☰</button>
+            </div>
+            <a class="menu__item " href="index.html">
+                <i class="menu__icon  icon-general"></i>
+                <p class="menu__text ">General</p>
+            </a>
+            <a class="menu__item" href="details.html">
+                <i class="menu__icon icon-details"></i>
+                <p class="menu__text">Details</p>
+            </a>
+            <a class="menu__item" href="links.html">
+                <i class="menu__icon icon-links"></i>
+                <p class="menu__text">Links</p>
+            </a>
+            <a class="menu__item" href="baners.html">
+                <i class="menu__icon icon-banners"></i>
+                <p class="menu__text">Banners</p>
+            </a>
+            <a class="menu__item menu__item--active" href="personaldata.html">
+                <i class="menu__icon menu__icon--active icon-personaldata"></i>
+                <p class="menu__text menu__text--active">Personal data</p>
+            </a>
+            <a class="menu__item" href="payout.html">
+                <i class="menu__icon icon-payout"></i>
+                <p class="menu__text">Payout</p>
+            </a>
+            <a class="menu__item" href="postback.html">
+                <i class="menu__icon icon-postback"></i>
+                <p class="menu__text">Postback</p>
+            </a>
+            <hr class="menu__line">
+            <h2 class="menu__text menu__text--manager">YOUR MANAGER</h2>
+            <div class="menu__header menu__manager">
+                <img class="menu__manager-image" src="images/manager.png" alt="">
+                <a class="link link--small" href="#">Michael E.</a> <br>
+            </div>
+            <div class="menu__mobile">
+                <div class="menu__item menu__item--mobile">
+                    <i class="menu__icon icon-wallet"></i>
+                    <p class="menu__text">$1,500.00</p>
+                    <i class="menu__icon icon-arrow-down-small"></i>
+                </div>
+                <div class="menu__item menu__item--mobile">
+                    <i class="menu__icon icon-profile"></i>
+                    <a class="link link--small" href="#">Leonardo Dicaprio</a>
+                </div>
+                <a class="menu__item menu__item--mobile" href="#">
+                    <img class="menu__icon top-menu__icon--button" src="images/icons/notification.svg">
+                    <i class="menu__icon icon-quit"></i>
+                </a>
+            </div>
+        </div>
+        <div id="top-menu" class="top-menu col-lg-10">
+            <div class="top-menu__item"></div>
+            <div class="top-menu__vl"></div>
+            <i class="top-menu__icon icon-wallet"></i>
+            <p class="top-menu__money">$1,500.00</p>
+            <i class="top-menu__icon icon-arrow-down-small"></i>
+            <div class="top-menu__vl"></div>
+            <button class="top-menu__button"><img class="top-menu__icon top-menu__icon--button" src="images/icons/notification.svg"></button>
+            <div class="top-menu__vl"></div>
+            <i class="top-menu__icon icon-profile"></i>
+            <a class="link link--small" href="#">Leonardo Dicaprio</a>
+            <div class="top-menu__vl"></div>
+            <button class="top-menu__button"><i class="top-menu__icon top-menu__icon--button icon-quit"></i></button>
+        </div>
+    </nav>
+    <section class="sections sections--first col-lg-10 ">
+        <div class="sections__container">
+            <h1 class="page__header">Personal data</h1>
+            <hr class="sections__hr">
+            <div class="sections__column">
+                <div class="sections__row col-lg-3 col-sm-12">
+                    <div class="input__description">Name</div>
+                    <input class="input" placeholder="Enter name">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

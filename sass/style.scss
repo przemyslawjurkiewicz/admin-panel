@@ -48,6 +48,16 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background: #fff;
+  }
+
+  &__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
   }
 
   &__hr {

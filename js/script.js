@@ -40,11 +40,15 @@
     topMenu.classList.toggle('top-menu--mini');
     topMenu.classList.toggle('col-lg-10');
     topMenu.classList.toggle('col-lg-11');
+
+    
    
     for (var i = 0; i < sections.length; i++) {
       sections[i].classList.toggle('sections--mini');
       sections[i].classList.toggle('col-lg-10');
       sections[i].classList.toggle('col-lg-11');
+
+      
     }
     for (var i = 0; i < logo.length; i++) {
       logo[i].classList.toggle('menu__logo--mini');
@@ -68,6 +72,5 @@
       items[i].classList.toggle('menu__item--mini');
     }
   };
-
-
+ 
 })();

@@ -56,6 +56,11 @@
       justify-content: space-around;
       height: 40px;
     }
+
+    &--active {
+      background: #282828;
+      border-left: 3px solid $orange;
+    }
   }
 
   &__icon {
@@ -65,6 +70,11 @@
     text-decoration: none;
     width: 10px;
     height: 10px;
+
+    &--active {
+      color: #fff;
+      margin: 0 20px 0 17px;
+    }
 
     &--mini {
       margin: 0;
@@ -85,6 +95,11 @@
     &--mini {
       display: none;
     }
+
+    &--active {
+      color: #fff;
+    }
+
   }
 
   &__line {
@@ -138,6 +153,7 @@
     &__text {
       font-size: 10px;
     }
+
     &__icon {
       font-size: 10px;
     }
@@ -147,8 +163,6 @@
 
 @media (max-height: 500px) {
   .menu {
-    max-width: 160px;
-
     &__item {
       &--mobile {
         height: 20px;

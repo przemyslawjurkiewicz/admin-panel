@@ -1,5 +1,5 @@
 [class*="col-"] {
-    width: 100%;
+   width: 100%;
     //height: 150px;
     //padding: 18px; 
     float: left;
@@ -11,13 +11,13 @@
   }
   
   @media(min-width: 768px) {
-    @include grid('md');
-  }
-  
-  @media(min-width: 992px) {
     @include grid('lg');
   }
   
-  @media(min-width: 1200px) {
-    @include grid('xl');
-  }
+ // @media(min-width: 992px) {
+//  @include grid('sm');
+ // }
+  
+ // @media(min-width: 1200px) {
+ //   @include grid('lg');
+//  }

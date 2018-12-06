@@ -16,21 +16,21 @@
                 <img class="menu__logo" src="images/logo.png">
                 <button id="hamburger" class="menu__hamburger">☰</button>
             </div>
-            <a class="menu__item menu__item--active " href="index.html">
-                <i class="menu__icon menu__icon--active icon-general"></i>
-                <p class="menu__text menu__text--active">General</p>
+            <a id="general" class="menu__item" href="index.html">
+                <i class="menu__icon icon-general"></i>
+                <p class="menu__text">General</p>
             </a>
             <a class="menu__item" href="details.html">
                 <i class="menu__icon icon-details"></i>
                 <p class="menu__text">Details</p>
             </a>
-            <a class="menu__item" href="links.html">
+            <a id="links" class="menu__item " href="links.html">
                 <i class="menu__icon icon-links"></i>
-                <p class="menu__text">Links</p>
+                <p class="menu__text ">Links</p>
             </a>
-            <a class="menu__item" href="baners.html">
-                <i class="menu__icon icon-banners"></i>
-                <p class="menu__text">Banners</p>
+            <a class="menu__item menu__item--active" href="baners.html">
+                <i class="menu__icon menu__icon--active icon-banners"></i>
+                <p class="menu__text menu__text--active">Banners</p>
             </a>
             <a class="menu__item" href="personaldata.html">
                 <i class="menu__icon icon-personaldata"></i>
@@ -81,58 +81,7 @@
             <button class="top-menu__button"><i class="top-menu__icon top-menu__icon--button icon-quit"></i></button>
         </div>
     </nav>
-    <section class="sections sections--first col-lg-10 col-sm-12">
-        <div class="sections__container">
-            <h1 class="page__header">General statistic</h1>
-            <hr class="sections__hr">
-            <div class="sections__row--always-row">
-                <div class="date-period">
-                    <input class="date-period__input date-period__input--first" type="text" value="2018-01-01">
-                    <input class="date-period__input" type="text" value="2018-12-01">
-                </div>
-                <button class="button"><i class="icon-refresh button__icon"></i>
-                </button>
-            </div>
-            <hr class="sections__hr">
-            <div class="sections__row">
-                <div class="col-lg-3 col-sm-12">
-                    <div class="single-list">
-                        <div class="single-list__item single-list__item--header">Line header</div>
-                        <div class="single-list__item">123</div>
-                    </div>
-                    <div class="single-list">
-                        <div class="single-list__item single-list__item--header">Line header</div>
-                        <div class="single-list__item">123</div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-12">
-                    <div class="single-list">
-                        <div class="single-list__item single-list__item--header">Line header</div>
-                        <div class="single-list__item">123</div>
-                    </div>
-                    <div class="single-list">
-                        <div class="single-list__item single-list__item--header">Line header</div>
-                        <div class="single-list__item">123</div>
-                    </div>
-                </div>
-            </div>
-            <div class="sections__row">
-                <div class="col-lg-3 col-sm-12">
-                    <h2 class="section__header">Earning chart</h2>
-                </div>
-                <div class="col-lg-3 col-sm-12"></div>
-            </div>
-            <div class="sections__row">
-                <button class="button button--tab"><img class="circle" src="images/circleBlue.svg">Signups</button>
-                <button class="button button--tab"><img class="circle" src="images/circleOrange.svg">FTP</button>
-                <button class="button button--tab"><img class="circle" src="images/circleGreen.svg">Earned</button>
-            </div>
-            <div class="sections__row">
-                <img class="image" src="images/chart.png">
-            </div>
-        </div>
-    </section>
-    <section class="sections col-lg-10 col-sm-12">
+    <section class="sections sections--first col-lg-10 ">
         <div class="sections__container">
             <h1 class="page__header">Links</h1>
             <hr class="sections__hr">
@@ -141,56 +90,38 @@
                 <div class="col-lg-6 col-sm-12">
                     <table class="table-links">
                         <tr class="table-links__row">
-                            <td class="table-links__item">Home page</td>
-                            <td class="table-links__item"><a class="link" href="#">http://homepage.com</a></td>
+                            <td class="table-links__item">Baner main</td>
+                            <td class="table-links__item"><a class="link" href="#">http://webside.com/banermaine.gif</a></td>
                             <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
                                 <i class="table-links__icon icon-trash"></i></td>
                         </tr>
                         <tr class="table-links__row">
-                            <td class="table-links__item">Curently offer</td>
-                            <td class="table-links__item"><a class="link" href="#">http://curently.com</a></td>
+                            <td class="table-links__item">Sign up baner</td>
+                            <td class="table-links__item"><a class="link" href="#">http://webside.com/signup.gif</a></td>
                             <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
                                 <i class="table-links__icon icon-trash"></i></td>
                         </tr>
                         <tr class="table-links__row">
-                            <td class="table-links__item">Blurpix</td>
-                            <td class="table-links__item"><a class="link" href="#">http://blurpix.com</a></td>
+                            <td class="table-links__item">Baner left side</td>
+                            <td class="table-links__item"><a class="link" href="#">http://webside.com/leftside.gif</a></td>
                             <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
                                 <i class="table-links__icon icon-trash"></i></td>
                         </tr>
                         <tr class="table-links__row">
-                            <td class="table-links__item">Your site</td>
-                            <td class="table-links__item"><a class="link" href="#">http://yoursite.com</a></td>
+                            <td class="table-links__item">Vertical baner</td>
+                            <td class="table-links__item"><a class="link" href="#">http://webside.com/vert.gif</a></td>
                             <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
                                 <i class="table-links__icon icon-trash"></i></td>
                         </tr>
                         <tr class="table-links__row">
-                            <td class="table-links__item">Google</td>
-                            <td class="table-links__item"><a class="link" href="#">http://google.com</a></td>
+                            <td class="table-links__item">Front baner</td>
+                            <td class="table-links__item"><a class="link" href="#">http://webside.com/front.gif</a></td>
                             <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
                                 <i class="table-links__icon icon-trash"></i></td>
                         </tr>
                         <tr class="table-links__row">
-                            <td class="table-links__item">Facebook</td>
-                            <td class="table-links__item"><a class="link" href="#">http://facebook.com</a></td>
-                            <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
-                                <i class="table-links__icon icon-trash"></i></td>
-                        </tr>
-                        <tr class="table-links__row">
-                            <td class="table-links__item">Blurax</td>
-                            <td class="table-links__item"><a class="link" href="#">http://blurax.com</a></td>
-                            <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
-                                <i class="table-links__icon icon-trash"></i></td>
-                        </tr>
-                        <tr class="table-links__row">
-                            <td class="table-links__item">Piece of wine</td>
-                            <td class="table-links__item"><a class="link" href="#">http://piceofwine.com</a></td>
-                            <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
-                                <i class="table-links__icon icon-trash"></i></td>
-                        </tr>
-                        <tr class="table-links__row">
-                            <td class="table-links__item">Twitter</td>
-                            <td class="table-links__item"><a class="link" href="#">http://twitter.com</a></td>
+                            <td class="table-links__item">Horizontal banerk</td>
+                            <td class="table-links__item"><a class="link" href="#">http://webside.com/horizontal.gif</a></td>
                             <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
                                 <i class="table-links__icon icon-trash"></i></td>
                         </tr>
