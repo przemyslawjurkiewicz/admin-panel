@@ -1,6 +1,6 @@
 .table-links {
-    margin: 20px 0 20px 0;
-    width: 100%;
+    margin: 20px 0;
+    width: 50%;
     border-collapse: collapse;
     &__row {
       &:hover {
@@ -40,6 +40,7 @@
 
   @media (max-width: 767px) {
     .table-links {
+      width: 100%;
       &__item {
       padding: 10px;
       font-size: $small-font-size;

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="personaldata">
+<body class="general">
     <nav>
         <div id="menu" class="menu col-lg-2 col-sm-6">
             <div class="menu__header">
@@ -81,19 +81,77 @@
             <button class="top-menu__button"><i class="top-menu__icon top-menu__icon--button icon-quit"></i></button>
         </div>
     </nav>
-    <section class="sections sections--first col-lg-10 ">
-        <div class="sections__container">
-            <h1 class="page__header">Personal data</h1>
+    <section class="sections sections--first col-lg-10 col-sm-12">
+        <div class="sections__container sections__container--fluid">
+            <div class="sections__row sections__row--header">
+                <h1 class="page-header">Personal data</h1>
+            </div>
             <hr class="sections__hr">
-            <div class="sections__column">
-                <div class="sections__row col-lg-3 col-sm-12">
-                    <div class="input__description">Name</div>
-                    <input class="input" placeholder="Enter name">
+            <div class="sections__row">
+                <div class="personal-data">
+                    <div class="personal-data__row">
+                        <div class="input__description">Name</div>
+                        <input class="input personal-data__input" type="text" placeholder="Enter name">
+                    </div>
+                    <div class="personal-data__row">
+                        <div class="input__description">Surename</div>
+                        <input class="input personal-data__input" type="text" placeholder="Enter surename">
+                    </div>
+                    <div class="personal-data__row">
+                        <div class="input__description">E-mail</div>
+                        <input class="input personal-data__input" type="email" placeholder="Enter email">
+                    </div>
+                    <div class="personal-data__row">
+                        <div class="input__description">Phone number</div>
+                        <input class="input personal-data__input" type="tel" placeholder="Enter email">
+                    </div>
                 </div>
+            </div>
+            <hr class="sections__hr">
+            <div class="sections__row">
+                <div class="personal-data">
+                    <div class="personal-data__row">
+                        <div class="input__description">Skype</div>
+                        <input class="input personal-data__input" type="text" placeholder="Enter Skype">
+                    </div>
+                    <div class="personal-data__row">
+                        <div class="input__description">ICQ</div>
+                        <input class="input personal-data__input" type="text" placeholder="Enter ICQ">
+                    </div>
+                    <div class="personal-data__row">
+                        <div class="input__description">Msn</div>
+                        <input class="input personal-data__input" type="text" placeholder="Enter Msn">
+                    </div>
+                </div>
+            </div>
+            <hr class="sections__hr">
+            <div class="sections__row">
+                <div class="personal-data">
+                    <div class="personal-data__row">
+                        <div class="input__description">Wallet</div>
+                        <input class="input personal-data__input" type="text" placeholder="Enter wallet">
+                    </div>
+                </div>
+            </div>
+            <hr class="sections__hr">
+            <div class="sections__row">
+                <div class="personal-data">
+                    <div class="personal-data__row">
+                        <div class="input__description">Password</div>
+                        <input class="input input--password personal-data__input" type="password" placeholder="Enter password">
+                    </div>
+                    <div class="personal-data__row">
+                        <div class="input__description">Repeat</div>
+                        <input class="input input--password personal-data__input" type="password" placeholder="Repeat password">
+                    </div>
+                </div>
+            </div>
+            <hr class="sections__hr">
+            <div class="sections__row">
+                <button class="button">Save</button>
             </div>
         </div>
     </section>
-
     <script src="js/script.js"></script>
 </body>
 

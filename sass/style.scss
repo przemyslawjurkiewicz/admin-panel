@@ -12,6 +12,7 @@
 @import "./sass/components/menu";
 @import "./sass/components/single-list";
 @import "./sass/components/glyphter";
+@import "./sass/sections/personal-data";
 
 * {
   font-family: $brand-font;
@@ -23,13 +24,12 @@
 }
 
 .sections {
-  padding: 18px;
-  padding-top: 0;
+  padding-top: 15px;
   margin-left: 16.66%;
 
   &--first {
-    padding: 18px;
-    margin: 58px 0 0 16.66%;
+    padding-top: 70px;
+   // margin: 58px 0 0 16.66%;
   }
 
   &--mini {
@@ -38,9 +38,14 @@
   }
 
   &__container {
-    text-align: center;
-    padding: 8px 0;
-    background: #fff;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    &--fluid {
+      max-width: none;
+    }
   }
 
   &__row {
@@ -49,19 +54,20 @@
     align-items: center;
     flex-wrap: wrap;
     background: #fff;
-  }
 
-  &__column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background: #fff;
+    &--header {
+      justify-content: flex-start;
+    }
+   
   }
 
   &__hr {
-    border: 1px solid $lavender;
+    border: 0;
+    background-color:$lavender;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+
   }
 }
 
@@ -72,21 +78,23 @@
   height: auto;
 }
 
-.page__header {
-  margin: 10px 0 15px 15px;
+.page-header {
+  margin: 15px;
   text-align: left;
   font-size: $normal-font-size;
   font-weight: 500;
   text-transform: uppercase;
   color: $grey;
+  background: #fff;
 }
 
-.section__header {
+.section-header {
   margin: 20px 0 15px 15px;
   text-align: left;
   font-size: $normal-font-size;
   font-weight: 700;
   color: $grey;
+  background: #fff;
 }
 
 .dark-text {
@@ -142,7 +150,6 @@
 
     &__row {
       flex-direction: column;
-
       &--always-row {
         flex-direction: row;
         flex-wrap: nowrap;

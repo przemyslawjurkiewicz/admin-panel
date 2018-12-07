@@ -1,12 +1,17 @@
 .date-period {
-  display: inline-block;
+  display: flex;
   border: 1px solid $lavender;
   height: 40px;
   padding: 10px;
+  justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 
   &__input {
     border: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
     //margin-left: 15px;
     background-image: url("../images/icons/calendar.svg");
     background-size: 20px;
@@ -32,8 +37,8 @@
   .date-period {
     &__input {
       background-size: 12px;
-      min-width: 0;
-      width: auto;
+      max-width: 100px;
+      
       font-size: $small-font-size;
     }
   }

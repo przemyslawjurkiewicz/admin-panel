@@ -1,50 +1,54 @@
 .input {
-    margin: 20px 0;
-    padding: 15px;
-    min-width: 300px;
-    border: 1px solid $lavender;
-    border-radius: 3px;
-    color: $dark;
-  
-    &::placeholder {
-      color: $grey-light;
+  margin: 10px 0;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid $lavender;
+  border-radius: 3px;
+  color: $dark;
+
+  &::placeholder {
+    color: $grey-light;
+  }
+
+  &__description {
+    margin: 20px;
+    font-size: $normal-font-size;
+    font-weight: 700;
+    color: $grey;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $dark;
+  }
+
+  &--text {
+    padding-top: 15px;
+    padding-right: 15px;
+    min-width: 160px;
+    min-height: 120px;
+    font-size: $small-font-size;
+  }
+
+  &--password {
+    padding-left: 40px;
+    background-image: url("../images/icons/password.svg");
+    background-size: 20px;
+    background-position: center left;
+    background-repeat: no-repeat;
+
+    &:invalid {
+      border: $red;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .input {
+    font-size: $small-font-size;
 
     &__description {
-      text-align: left;
-      font-size: $normal-font-size;
-      font-weight: 700;
-      color: $grey;
-    }
-  
-    &:focus {
-      outline: none;
-      border: 1px solid $dark;
-    }
-  
-    &--text {
-      padding-top: 15px;
-      padding-right: 15px;
-      min-width: 160px;
-      min-height: 120px;
-      font-size: $small-font-size;
-    }
-  
-    &--password {
-      padding-left: 40px;
-      background-image: url("../images/icons/password.svg");
-      background-size: 20px;
-      background-position: 15px 20px;
-      background-repeat: no-repeat;
-  
-      &:invalid {
-        border: $red;
-      }
+      margin-bottom: 0;
     }
   }
-
-  @media (max-width: 767px) {
-    .input {
-      margin: 0;
-  }
-  }
+}

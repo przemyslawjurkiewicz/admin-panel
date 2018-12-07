@@ -1,0 +1,26 @@
+.personal-data {
+   max-width: 50%;
+   min-width: 30%;
+     &__row{
+        display: flex;
+        justify-content: space-between;
+    align-items: center;
+    }
+    &__input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .personal-data {
+        max-width: 80%;
+        min-width: 30%;
+        &__row{
+            display: flex;
+            justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        }
+        
+    }
+}

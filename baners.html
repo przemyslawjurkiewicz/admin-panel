@@ -16,21 +16,21 @@
                 <img class="menu__logo" src="images/logo.png">
                 <button id="hamburger" class="menu__hamburger">☰</button>
             </div>
-            <a id="general" class="menu__item" href="index.html">
-                <i class="menu__icon icon-general"></i>
-                <p class="menu__text">General</p>
+            <a class="menu__item menu__item--active " href="index.html">
+                <i class="menu__icon menu__icon--active icon-general"></i>
+                <p class="menu__text menu__text--active">General</p>
             </a>
             <a class="menu__item" href="details.html">
                 <i class="menu__icon icon-details"></i>
                 <p class="menu__text">Details</p>
             </a>
-            <a id="links" class="menu__item " href="links.html">
+            <a class="menu__item" href="links.html">
                 <i class="menu__icon icon-links"></i>
-                <p class="menu__text ">Links</p>
+                <p class="menu__text">Links</p>
             </a>
-            <a class="menu__item menu__item--active" href="baners.html">
-                <i class="menu__icon menu__icon--active icon-banners"></i>
-                <p class="menu__text menu__text--active">Banners</p>
+            <a class="menu__item" href="baners.html">
+                <i class="menu__icon icon-banners"></i>
+                <p class="menu__text">Banners</p>
             </a>
             <a class="menu__item" href="personaldata.html">
                 <i class="menu__icon icon-personaldata"></i>
@@ -81,55 +81,60 @@
             <button class="top-menu__button"><i class="top-menu__icon top-menu__icon--button icon-quit"></i></button>
         </div>
     </nav>
-    <section class="sections sections--first col-lg-10 ">
-        <div class="sections__container">
-            <h1 class="page__header">Links</h1>
-            <hr class="sections__hr">
-            <button class="button">+ add new</button>
-            <div class="sections__row">
-                <div class="col-lg-6 col-sm-12">
-                    <table class="table-links">
-                        <tr class="table-links__row">
-                            <td class="table-links__item">Baner main</td>
-                            <td class="table-links__item"><a class="link" href="#">http://webside.com/banermaine.gif</a></td>
-                            <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
-                                <i class="table-links__icon icon-trash"></i></td>
-                        </tr>
-                        <tr class="table-links__row">
-                            <td class="table-links__item">Sign up baner</td>
-                            <td class="table-links__item"><a class="link" href="#">http://webside.com/signup.gif</a></td>
-                            <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
-                                <i class="table-links__icon icon-trash"></i></td>
-                        </tr>
-                        <tr class="table-links__row">
-                            <td class="table-links__item">Baner left side</td>
-                            <td class="table-links__item"><a class="link" href="#">http://webside.com/leftside.gif</a></td>
-                            <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
-                                <i class="table-links__icon icon-trash"></i></td>
-                        </tr>
-                        <tr class="table-links__row">
-                            <td class="table-links__item">Vertical baner</td>
-                            <td class="table-links__item"><a class="link" href="#">http://webside.com/vert.gif</a></td>
-                            <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
-                                <i class="table-links__icon icon-trash"></i></td>
-                        </tr>
-                        <tr class="table-links__row">
-                            <td class="table-links__item">Front baner</td>
-                            <td class="table-links__item"><a class="link" href="#">http://webside.com/front.gif</a></td>
-                            <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
-                                <i class="table-links__icon icon-trash"></i></td>
-                        </tr>
-                        <tr class="table-links__row">
-                            <td class="table-links__item">Horizontal banerk</td>
-                            <td class="table-links__item"><a class="link" href="#">http://webside.com/horizontal.gif</a></td>
-                            <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
-                                <i class="table-links__icon icon-trash"></i></td>
-                        </tr>
-                    </table>
-                </div>
+    <section class="sections sections--first col-lg-10 col-sm-12">
+        <div class="sections__container sections__container--fluid">
+            <div class="sections__row sections__row--header">
+                <h1 class="page-header">Banners</h1>
             </div>
-            <button class="button">+ add new</button>
+            <hr class="sections__hr">
+            <div class="sections__row">
+                <button class="button">+ add new</button>
+            </div>
+            <div class="sections__row">
+                <table class="table-links">
+                    <tr class="table-links__row">
+                        <td class="table-links__item">Baner main</td>
+                        <td class="table-links__item"><a class="link" href="#">http://webside.com/banermaine.gif</a></td>
+                        <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
+                            <i class="table-links__icon icon-trash"></i></td>
+                    </tr>
+                    <tr class="table-links__row">
+                        <td class="table-links__item">Sign up baner</td>
+                        <td class="table-links__item"><a class="link" href="#">http://webside.com/signup.gif</a></td>
+                        <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
+                            <i class="table-links__icon icon-trash"></i></td>
+                    </tr>
+                    <tr class="table-links__row">
+                        <td class="table-links__item">Baner left side</td>
+                        <td class="table-links__item"><a class="link" href="#">http://webside.com/leftside.gif</a></td>
+                        <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
+                            <i class="table-links__icon icon-trash"></i></td>
+                    </tr>
+                    <tr class="table-links__row">
+                        <td class="table-links__item">Vertical baner</td>
+                        <td class="table-links__item"><a class="link" href="#">http://webside.com/vert.gif</a></td>
+                        <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
+                            <i class="table-links__icon icon-trash"></i></td>
+                    </tr>
+                    <tr class="table-links__row">
+                        <td class="table-links__item">Front baner</td>
+                        <td class="table-links__item"><a class="link" href="#">http://webside.com/front.gif</a></td>
+                        <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
+                            <i class="table-links__icon icon-trash"></i></td>
+                    </tr>
+                    <tr class="table-links__row">
+                        <td class="table-links__item">Horizontal banerk</td>
+                        <td class="table-links__item"><a class="link" href="#">http://webside.com/horizontal.gif</a></td>
+                        <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
+                            <i class="table-links__icon icon-trash"></i></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sections__row">
+                <button class="button">+ add new</button>
+            </div>
         </div>
+
     </section>
     <script src="js/script.js"></script>
 </body>

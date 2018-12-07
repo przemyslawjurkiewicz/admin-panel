@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "personal-data.css",
+	"sources": [
+		"../../sass/sections/personal-data.scss"
+	],
+	"names": [],
+	"mappings": "AACM,AAAD,mBAAM,CAAA;EACH,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAClC,WAAW,EAAE,MAAM;CAClB;;AAGL,MAAM,EAAE,SAAS,EAAE,KAAK;EAEf,AAAD,mBAAM,CAAA;IACF,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,aAAa;IAClC,WAAW,EAAE,MAAM;IACnB,cAAc,EAAE,MAAM;GACrB"
+}
