@@ -21,6 +21,12 @@
     outline: none;
     border: 1px solid $dark;
   }
+  &:invalid {
+    border: $red;
+  }
+  &:valid {
+    border: $green;
+  }
 
   &--text {
     padding-top: 15px;
@@ -36,11 +42,7 @@
     background-size: 20px;
     background-position: center left;
     background-repeat: no-repeat;
-
-    &:invalid {
-      border: $red;
-    }
-  }
+ }
 }
 
 @media (max-width: 767px) {
