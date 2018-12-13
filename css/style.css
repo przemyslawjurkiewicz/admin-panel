@@ -533,7 +533,7 @@ template {
   color: #bababa;
 }
 
-.input__description {
+.input__label {
   margin: 20px;
   font-size: 16px;
   font-weight: 700;
@@ -569,7 +569,7 @@ template {
   .input {
     font-size: 12px;
   }
-  .input__description {
+  .input__label {
     margin-bottom: 0;
   }
 }
@@ -1168,7 +1168,8 @@ template {
 }
 
 .personal-data {
-  width: 35%;
+  width: 30%;
+  background: #fff;
 }
 
 .personal-data__row {
@@ -1183,13 +1184,9 @@ template {
 
 @media (max-width: 767px) {
   .personal-data {
-    max-width: 80%;
-    min-width: 30%;
+    width: auto;
   }
   .personal-data__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
   }
 }

@@ -1,11 +1,14 @@
 .personal-data {
-   width: 35%;
+    width: 30%;
+    background: #fff;
 
-     &__row{
+    &__row {
+        //  width: 30%;
         display: flex;
         justify-content: space-between;
-    align-items: center;
+        align-items: center;
     }
+
     &__input {
         width: 250px;
     }
@@ -13,14 +16,11 @@
 
 @media (max-width: 767px) {
     .personal-data {
-        max-width: 80%;
-        min-width: 30%;
-        &__row{
-            display: flex;
-            justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
+        width: auto;
+
+        &__row {
+            flex-direction: column;
         }
-        
+
     }
 }

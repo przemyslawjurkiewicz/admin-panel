@@ -88,67 +88,57 @@
             </div>
             <hr class="sections__hr">
             <div class="sections__row">
-                <div class="personal-data">
+                <form action="" method="POST" class="personal-data">
                     <div class="personal-data__row">
-                        <div class="input__description">Name</div>
-                        <input class="input personal-data__input" type="text" placeholder="Enter name">
+                        <label class="input__label" for="name">Name</label>
+                        <input class="input personal-data__input" type="text" name="name" placeholder="Enter name">
                     </div>
                     <div class="personal-data__row">
-                        <div class="input__description">Surename</div>
-                        <input class="input personal-data__input" type="text" placeholder="Enter surename">
+                        <label class="input__label">Surename</label>
+                        <input class="input personal-data__input" type="text" name="surname" placeholder="Enter surename">
                     </div>
                     <div class="personal-data__row">
-                        <div class="input__description">E-mail</div>
-                        <input class="input personal-data__input" type="email" placeholder="Enter email">
+                        <label class="input__label">E-mail</label>
+                        <input class="input personal-data__input" type="email" name="email" placeholder="Enter email">
                     </div>
                     <div class="personal-data__row">
-                        <div class="input__description">Phone number</div>
-                        <input class="input personal-data__input" type="tel" placeholder="Enter email">
+                        <label class="input__label">Phone number</label>
+                        <input class="input personal-data__input" type="tel" name="phone" placeholder="Enter phone number">
                     </div>
-                </div>
-            </div>
-            <hr class="sections__hr">
-            <div class="sections__row">
-                <div class="personal-data">
+                    <hr class="sections__hr">
                     <div class="personal-data__row">
-                        <div class="input__description">Skype</div>
-                        <input class="input personal-data__input" type="text" placeholder="Enter Skype">
+                        <label class="input__label">Skype</label>
+                        <input class="input personal-data__input" type="text" name="skype" placeholder="Enter Skype">
                     </div>
                     <div class="personal-data__row">
-                        <div class="input__description">ICQ</div>
-                        <input class="input personal-data__input" type="text" placeholder="Enter ICQ">
+                        <label class="input__label">ICQ</label>
+                        <input class="input personal-data__input" type="text" name="icq" placeholder="Enter ICQ">
                     </div>
                     <div class="personal-data__row">
-                        <div class="input__description">Msn</div>
-                        <input class="input personal-data__input" type="text" placeholder="Enter Msn">
+                        <label class="input__label">Msn</label>
+                        <input class="input personal-data__input" type="text" name="msn" placeholder="Enter Msn">
                     </div>
-                </div>
-            </div>
-            <hr class="sections__hr">
-            <div class="sections__row">
-                <div class="personal-data">
+                    <hr class="sections__hr">
                     <div class="personal-data__row">
-                        <div class="input__description">Wallet</div>
-                        <input class="input personal-data__input" type="text" placeholder="Enter wallet">
+                        <label class="input__label">Wallet</label>
+                        <input class="input personal-data__input" type="text" name="wallet" placeholder="Enter wallet">
                     </div>
-                </div>
-            </div>
-            <hr class="sections__hr">
-            <div class="sections__row">
-                <div class="personal-data">
+                    <hr class="sections__hr">
                     <div class="personal-data__row">
-                        <div class="input__description">Password</div>
-                        <input class="input input--password personal-data__input" type="password" placeholder="Enter password">
+                        <label class="input__label">Password</label>
+                        <input class="input input--password personal-data__input" type="password" name="password"
+                            placeholder="Enter password">
                     </div>
                     <div class="personal-data__row">
-                        <div class="input__description">Repeat</div>
-                        <input class="input input--password personal-data__input" type="password" placeholder="Repeat password">
+                        <label class="input__label">Repeat</label>
+                        <input class="input input--password personal-data__input" type="password" name="passworRepeat"
+                            placeholder="Repeat password">
                     </div>
-                </div>
-            </div>
-            <hr class="sections__hr">
-            <div class="sections__row">
-                <button class="button">Save</button>
+                    <hr class="sections__hr">
+                    <div class="sections__row">
+                        <button class="button" type="submit">Save</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
