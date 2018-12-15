@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -87,59 +85,61 @@
                 <h1 class="page-header">Personal data</h1>
             </div>
             <hr class="sections__hr">
-            <div class="sections__row">
-                <form action="" method="POST" class="personal-data">
-                    <div class="personal-data__row">
-                        <label class="input__label" for="name">Name</label>
-                        <input class="input personal-data__input" type="text" name="name" placeholder="Enter name" required minlength="3">
-                    </div>
-                    <div class="personal-data__row">
-                        <label class="input__label">Surename</label>
-                        <input class="input personal-data__input" type="text" name="surname" placeholder="Enter surename" required minlength="3">
-                    </div>
-                    <div class="personal-data__row">
-                        <label class="input__label">E-mail</label>
-                        <input class="input personal-data__input" type="email" name="email" placeholder="Enter email" required>
-                    </div>
-                    <div class="personal-data__row">
-                        <label class="input__label">Phone number</label>
-                        <input class="input personal-data__input" type="tel" name="phone" placeholder="Enter phone number">
-                    </div>
-                    <hr class="sections__hr">
-                    <div class="personal-data__row">
-                        <label class="input__label">Skype</label>
-                        <input class="input personal-data__input" type="text" name="skype" placeholder="Enter Skype">
-                    </div>
-                    <div class="personal-data__row">
-                        <label class="input__label">ICQ</label>
-                        <input class="input personal-data__input" type="text" name="icq" placeholder="Enter ICQ">
-                    </div>
-                    <div class="personal-data__row">
-                        <label class="input__label">Msn</label>
-                        <input class="input personal-data__input" type="text" name="msn" placeholder="Enter Msn">
-                    </div>
-                    <hr class="sections__hr">
-                    <div class="personal-data__row">
-                        <label class="input__label">Wallet</label>
-                        <input class="input personal-data__input" type="text" name="wallet" placeholder="Enter wallet">
-                    </div>
-                    <hr class="sections__hr">
-                    <div class="personal-data__row">
-                        <label class="input__label">Password</label>
-                        <input class="input input--password personal-data__input" type="password" name="password"
-                            placeholder="Enter password" required>
-                    </div>
-                    <div class="personal-data__row">
-                        <label class="input__label">Repeat</label>
-                        <input class="input input--password personal-data__input" type="password" name="passworRepeat"
-                            placeholder="Repeat password" required>
-                    </div>
-                    <hr class="sections__hr">
-                    <div class="sections__row">
-                        <button class="button" type="submit">Save</button>
-                    </div>
-                </form>
-            </div>
+            <form action="" method="POST" class="personal-data">
+                <div class="personal-data__row">
+                    <label class="input__label" for="name">Name</label>
+                    <input class="input personal-data__input" type="text" name="name" placeholder="Enter name" required
+                    pattern="^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{3,20}$" title="Must be minimum 3 charset only leters">
+                </div>
+                <div class="personal-data__row">
+                    <label class="input__label">Surename</label>
+                    <input class="input personal-data__input" type="text" name="family-name" placeholder="Enter surename"
+                        required  pattern="^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{3,20}$" title="Must be minimum 3 charset only leters">
+                </div>
+                <div class="personal-data__row">
+                    <label class="input__label">E-mail</label>
+                    <input class="input personal-data__input" type="email" name="email" placeholder="Enter email"
+                        required>
+                </div>
+                <div class="personal-data__row">
+                    <label class="input__label">Phone number</label>
+                    <input class="input personal-data__input" type="tel" name="tel" placeholder="Enter phone number"
+                    value="+48 " pattern="^[\+]\d{2}\s[0-9]{9}|[\+]\d{2}\s[0-9\s]{11}$" required>
+                </div>
+                <hr class="sections__hr">
+                <div class="personal-data__row">
+                    <label class="input__label">Skype</label>
+                    <input class="input personal-data__input" type="text" name="skype" placeholder="Enter Skype">
+                </div>
+                <div class="personal-data__row">
+                    <label class="input__label">ICQ</label>
+                    <input class="input personal-data__input" type="text" name="icq" placeholder="Enter ICQ">
+                </div>
+                <div class="personal-data__row">
+                    <label class="input__label">Msn</label>
+                    <input class="input personal-data__input" type="text" name="msn" placeholder="Enter Msn">
+                </div>
+                <hr class="sections__hr">
+                <div class="personal-data__row">
+                    <label class="input__label">Wallet</label>
+                    <input class="input personal-data__input" type="text" name="wallet" placeholder="Enter wallet">
+                </div>
+                <hr class="sections__hr">
+                <div class="personal-data__row">
+                    <label class="input__label">Password</label>
+                    <input class="input input--password personal-data__input" id="password" minlength="8" type="password" name="password"
+                        placeholder="Enter password" required>
+                </div>
+                <div class="personal-data__row">
+                    <label class="input__label">Repeat</label>
+                    <input class="input input--password personal-data__input" id="password-repeat" minlength="8" type="password" name="passworRepeat"
+                        placeholder="Repeat password" required>
+                </div>
+                <hr class="sections__hr">
+                <div class="sections__row">
+                    <button class="button" type="submit">Save</button>
+                </div>
+            </form>
         </div>
     </section>
     <script src="js/script.js"></script>

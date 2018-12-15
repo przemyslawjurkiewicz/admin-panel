@@ -17,16 +17,28 @@
     color: $grey;
   }
 
-  &:focus {
+  &:focus:invalid {
     outline: none;
     border: 1px solid $dark;
   }
   &:invalid {
-    border: $red;
+    border: 1px solid $red;
+   }
+
+  &:required{
+    outline: none;
+    border: 1px solid $lavender;
   }
-  &:valid {
-    border: $green;
+
+  &:required:invalid{
+    outline: none;
+    border: 1px solid $orange-light;
   }
+
+ 
+  //&:valid {
+ //   border: 1px solid $green;
+ // }
 
   &--text {
     padding-top: 15px;

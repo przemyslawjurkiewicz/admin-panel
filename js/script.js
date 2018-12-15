@@ -12,6 +12,8 @@
   var mobiles = document.getElementsByClassName('menu__mobile');
   var manager = document.getElementsByClassName('menu__manager');
   var items = document.getElementsByClassName('menu__item');
+  var password = document.getElementById("password");
+  var passwordRepeat = document.getElementById("password-repeat");
 
 
   for (var i = 0; i < buttonsTab.length; i++) {
@@ -73,4 +75,15 @@
     }
   };
  
+  function validatePassword(){
+    if(password.value != passwordRepeat.value) {
+      passwordRepeat.setCustomValidity("Passwords Don't Match");
+    } else {
+      passwordRepeat.setCustomValidity('');
+    }
+  }
+  
+  password.onchange = validatePassword;
+  passwordRepeat.onkeyup = validatePassword;
+
 })();
