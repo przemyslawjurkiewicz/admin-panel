@@ -9,41 +9,41 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="general">
+<body>
     <nav>
         <div id="menu" class="menu col-lg-2 col-sm-6">
             <div class="menu__header">
                 <img class="menu__logo" src="images/logo.png">
                 <button id="hamburger" class="menu__hamburger">☰</button>
             </div>
-            <a class="menu__item menu__item--active " href="index.html">
+            <div id="general" class="menu__item menu__item--active">
                 <i class="menu__icon menu__icon--active icon-general"></i>
                 <p class="menu__text menu__text--active">General</p>
-            </a>
-            <a class="menu__item" href="details.html">
+            </div>
+            <div id="details" class="menu__item">
                 <i class="menu__icon icon-details"></i>
                 <p class="menu__text">Details</p>
-            </a>
-            <a class="menu__item" href="links.html">
+            </div>
+            <div id="links" class="menu__item">
                 <i class="menu__icon icon-links"></i>
                 <p class="menu__text">Links</p>
-            </a>
-            <a class="menu__item" href="baners.html">
+            </div>
+            <div id="baners" class="menu__item">
                 <i class="menu__icon icon-banners"></i>
                 <p class="menu__text">Banners</p>
-            </a>
-            <a class="menu__item" href="personaldata.html">
+            </div>
+            <div id="personal-data" class="menu__item">
                 <i class="menu__icon icon-personaldata"></i>
                 <p class="menu__text">Personal data</p>
-            </a>
-            <a class="menu__item" href="payout.html">
+            </div>
+            <div id="payout" class="menu__item">
                 <i class="menu__icon icon-payout"></i>
                 <p class="menu__text">Payout</p>
-            </a>
-            <a class="menu__item" href="postback.html">
+            </div>
+            <div id="postback" class="menu__item">
                 <i class="menu__icon icon-postback"></i>
                 <p class="menu__text">Postback</p>
-            </a>
+            </div>
             <hr class="menu__line">
             <h2 class="menu__text menu__text--manager">YOUR MANAGER</h2>
             <div class="menu__header menu__manager">
@@ -81,13 +81,13 @@
             <button class="top-menu__button"><i class="top-menu__icon top-menu__icon--button icon-quit"></i></button>
         </div>
     </nav>
-    <section class="sections sections--first col-lg-10 col-sm-12">
+    <section id="section-general" class="sections sections--first col-lg-10 col-sm-12">
         <div class="sections__container sections__container--fluid">
             <div class="sections__row sections__row--header">
                 <h1 class="page-header">General statistic</h1>
             </div>
             <hr class="sections__hr">
-            <div class="sections__row sections__row--always-row">
+            <div class="sections__row">
                 <div class="date-period">
                     <input class="date-period__input date-period__input--first" type="text" maxlength="10" value="2018-01-01">
                     <input class="date-period__input" type="text" maxlength="10" value="2018-12-01">
@@ -134,7 +134,7 @@
             </div>
         </div>
     </section>
-    <section class="sections col-lg-10 col-sm-12">
+    <section id="section-links" class="sections col-lg-10 col-sm-12">
         <div class="sections__container sections__container--fluid">
             <div class="sections__row sections__row--header">
                 <h1 class="page-header">Links</h1>
@@ -201,12 +201,269 @@
                     </tr>
                 </table>
             </div>
-
             <div class="sections__row">
                 <button class="button">+ add new</button>
             </div>
         </div>
+    </section>
+    <section id="section-details" class="sections sections--first col-lg-10 col-sm-12">
+        <div class="sections__container sections__container--fluid">
+            <div class="sections__row sections__row--header">
+                <h1 class="page-header">Details statistic</h1>
+            </div>
+            <hr class="sections__hr">
+            <div class="sections__row">
+                <div class="date-period">
+                    <input class="date-period__input date-period__input--first" type="text" maxlength="10" value="2018-01-01">
+                    <input class="date-period__input" type="text" maxlength="10" value="2018-12-01">
+                </div>
+                <button class="button button--small"><i class="icon-refresh button__icon"></i>
+                </button>
+            </div>
+            <hr class="sections__hr">
+            <div class="sections__row">
+                <div class="sections__wrapper">
+                    <table class="table-large">
+                        <thead>
+                            <th class="table-large__head"><span class="table-large__span">Tracker name</span></th>
+                            <th class="table-large__head"><span class="table-large__span">initiated date</span></th>
+                            <th class="table-large__head"><span class="table-large__span">Visits</span></th>
+                            <th class="table-large__head"><span class="table-large__span">Uniqe</span></th>
+                            <th class="table-large__head"><span class="table-large__span">Signups</span></th>
+                            <th class="table-large__head"><span class="table-large__span">FTD</span></th>
+                            <th class="table-large__head"><span class="table-large__span">Depositors</span></th>
+                            <th class="table-large__head"><span class="table-large__span">Deposits($)</span></th>
+                            <th class="table-large__head"><span class="table-large__span">payout($)</span></th>
+                            <th class="table-large__head"><span class="table-large__span">Turnover</span></th>
+                            <th class="table-large__head"><span class="table-large__span">Deal</span></th>
+                        </thead>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">afn/sam_test</td>
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">232</td>
+                            <td class="table-large__item">114</td>
+                            <td class="table-large__item">12</td>
+                            <td class="table-large__item">6</td>
+                            <td class="table-large__item">3</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">234.00</td>
+                            <td class="table-large__item">421,342.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                        </tr>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">afn/sam_test</td>
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">232</td>
+                            <td class="table-large__item">114</td>
+                            <td class="table-large__item">12</td>
+                            <td class="table-large__item">6</td>
+                            <td class="table-large__item">3</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">234.00</td>
+                            <td class="table-large__item">421,342.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                        </tr>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">afn/sam_test</td>
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">232</td>
+                            <td class="table-large__item">114</td>
+                            <td class="table-large__item">12</td>
+                            <td class="table-large__item">6</td>
+                            <td class="table-large__item">3</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">234.00</td>
+                            <td class="table-large__item">421,342.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                        </tr>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">afn/sam_test</td>
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">232</td>
+                            <td class="table-large__item">114</td>
+                            <td class="table-large__item">12</td>
+                            <td class="table-large__item">6</td>
+                            <td class="table-large__item">3</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">234.00</td>
+                            <td class="table-large__item">421,342.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                        </tr>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">afn/sam_test</td>
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">232</td>
+                            <td class="table-large__item">114</td>
+                            <td class="table-large__item">12</td>
+                            <td class="table-large__item">6</td>
+                            <td class="table-large__item">3</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">234.00</td>
+                            <td class="table-large__item">421,342.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                        </tr>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">afn/sam_test</td>
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">232</td>
+                            <td class="table-large__item">114</td>
+                            <td class="table-large__item">12</td>
+                            <td class="table-large__item">6</td>
+                            <td class="table-large__item">3</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">234.00</td>
+                            <td class="table-large__item">421,342.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                        </tr>
+                        <tr class="table-large__row table-large__row--last">
+                            <td class="table-large__item">afn/sam_test</td>
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">232</td>
+                            <td class="table-large__item">114</td>
+                            <td class="table-large__item">12</td>
+                            <td class="table-large__item">6</td>
+                            <td class="table-large__item">3</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">234.00</td>
+                            <td class="table-large__item">421,342.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="sections__row">
+                <i class="icon-arrow-left pagination__icon"></i>
+                <button class="pagination__button">1</button>
+                <button class="pagination__button">2</button>
+                <button class="pagination__button">3</button>
+                <button class="pagination__button">4</button>
+                <button class="pagination__button">5</button>
+                <button class="pagination__button">6</button>
+                <button class="pagination__button">7</button>
+                <button class="pagination__button">8</button>
+                <button class="pagination__button">9</button>
+                <i class="icon-arrow-right pagination__icon"></i>  
+            </div>
+        </div>
+    </section>
 
+
+    <section id="section-baners" class="sections sections--first col-lg-10 col-sm-12">
+        <div class="sections__container sections__container--fluid">
+            <div class="sections__row sections__row--header">
+                <h1 class="page-header">Banners</h1>
+            </div>
+            <hr class="sections__hr">
+            <div class="sections__row">
+                <button class="button">+ add new</button>
+            </div>
+            <div class="sections__row">
+                <table class="table-links">
+                    <tr class="table-links__row">
+                        <td class="table-links__item">Baner main</td>
+                        <td class="table-links__item"><a class="link" href="#">http://webside.com/banermaine.gif</a></td>
+                        <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
+                            <i class="table-links__icon icon-trash"></i></td>
+                    </tr>
+                    <tr class="table-links__row">
+                        <td class="table-links__item">Sign up baner</td>
+                        <td class="table-links__item"><a class="link" href="#">http://webside.com/signup.gif</a></td>
+                        <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
+                            <i class="table-links__icon icon-trash"></i></td>
+                    </tr>
+                    <tr class="table-links__row">
+                        <td class="table-links__item">Baner left side</td>
+                        <td class="table-links__item"><a class="link" href="#">http://webside.com/leftside.gif</a></td>
+                        <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
+                            <i class="table-links__icon icon-trash"></i></td>
+                    </tr>
+                    <tr class="table-links__row">
+                        <td class="table-links__item">Vertical baner</td>
+                        <td class="table-links__item"><a class="link" href="#">http://webside.com/vert.gif</a></td>
+                        <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
+                            <i class="table-links__icon icon-trash"></i></td>
+                    </tr>
+                    <tr class="table-links__row">
+                        <td class="table-links__item">Front baner</td>
+                        <td class="table-links__item"><a class="link" href="#">http://webside.com/front.gif</a></td>
+                        <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
+                            <i class="table-links__icon icon-trash"></i></td>
+                    </tr>
+                    <tr class="table-links__row">
+                        <td class="table-links__item">Horizontal banerk</td>
+                        <td class="table-links__item"><a class="link" href="#">http://webside.com/horizontal.gif</a></td>
+                        <td class="table-links__item table-links__item--last"><i class="table-links__icon table-links__icon--first icon-links"></i>
+                            <i class="table-links__icon icon-trash"></i></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sections__row">
+                <button class="button">+ add new</button>
+            </div>
+        </div>
+    </section>
+    <section id="section-personal-data" class="sections sections--first col-lg-10 col-sm-12">
+        <div class="sections__container sections__container--fluid">
+            <div class="sections__row sections__row--header">
+                <h1 class="page-header">Personal data</h1>
+            </div>
+            <hr class="sections__hr">
+            <form action="" method="POST" class="personal-data">
+                <div class="personal-data__row">
+                    <label class="input__label" for="name">Name</label>
+                    <input class="input personal-data__input" type="text" name="name" placeholder="Enter name" required
+                        pattern="^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{3,20}$" title="Must be minimum 3 charset only leters">
+                </div>
+                <div class="personal-data__row">
+                    <label class="input__label">Surename</label>
+                    <input class="input personal-data__input" type="text" name="family-name" placeholder="Enter surename"
+                        required pattern="^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{3,20}$" title="Must be minimum 3 charset only leters">
+                </div>
+                <div class="personal-data__row">
+                    <label class="input__label">E-mail</label>
+                    <input class="input personal-data__input" type="email" name="email" placeholder="Enter email"
+                        required>
+                </div>
+                <div class="personal-data__row">
+                    <label class="input__label">Phone number</label>
+                    <input class="input personal-data__input" type="tel" name="tel" placeholder="Enter phone number"
+                        value="+48 " pattern="^[\+]\d{2}\s[0-9]{9}|[\+]\d{2}\s[0-9\s]{11}$" required>
+                </div>
+                <hr class="sections__hr">
+                <div class="personal-data__row">
+                    <label class="input__label">Skype</label>
+                    <input class="input personal-data__input" type="text" name="skype" placeholder="Enter Skype">
+                </div>
+                <div class="personal-data__row">
+                    <label class="input__label">ICQ</label>
+                    <input class="input personal-data__input" type="text" name="icq" placeholder="Enter ICQ">
+                </div>
+                <div class="personal-data__row">
+                    <label class="input__label">Msn</label>
+                    <input class="input personal-data__input" type="text" name="msn" placeholder="Enter Msn">
+                </div>
+                <hr class="sections__hr">
+                <div class="personal-data__row">
+                    <label class="input__label">Wallet</label>
+                    <input class="input personal-data__input" type="text" name="wallet" placeholder="Enter wallet">
+                </div>
+                <hr class="sections__hr">
+                <div class="personal-data__row">
+                    <label class="input__label">Password</label>
+                    <input class="input input--password personal-data__input" id="password" minlength="8" type="password"
+                        name="password" placeholder="Enter password" required>
+                </div>
+                <div class="personal-data__row">
+                    <label class="input__label">Repeat</label>
+                    <input class="input input--password personal-data__input" id="password-repeat" minlength="8" type="password"
+                        name="passworRepeat" placeholder="Repeat password" required>
+                </div>
+                <hr class="sections__hr">
+                <div class="sections__row">
+                    <button class="button" type="submit">Save</button>
+                </div>
+            </form>
+        </div>
     </section>
     <script src="js/script.js"></script>
 </body>

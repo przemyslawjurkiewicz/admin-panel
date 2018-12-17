@@ -1,0 +1,30 @@
+.pagination {
+
+    &__icon {
+        color: $grey-light;
+
+        &:hover {
+            color: $dark;
+        }
+    }
+
+    &__button {
+        border: none;
+        height: 40px;
+        background: none;
+        color: $paleblue;
+        font-size: $medium-font-size;
+        font-weight: 300;
+        padding: 0 15px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background: $grey-light;
+        }
+    }
+
+
+}
