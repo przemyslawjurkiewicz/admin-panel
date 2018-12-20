@@ -342,7 +342,7 @@
                 <button class="pagination__button">7</button>
                 <button class="pagination__button">8</button>
                 <button class="pagination__button">9</button>
-                <i class="icon-arrow-right pagination__icon"></i>  
+                <i class="icon-arrow-right pagination__icon"></i>
             </div>
         </div>
     </section>
@@ -465,6 +465,92 @@
             </form>
         </div>
     </section>
+    <section id="section-postback" class="sections sections--first col-lg-10 col-sm-12">
+        <div class="sections__container sections__container--fluid">
+            <div class="sections__row sections__row--header">
+                <h1 class="page-header">New postback</h1>
+            </div>
+            <hr class="sections__hr">
+            <form action="" method="POST" class="postback">
+                <p class="dark-text">You can insert some parameters in this postback</p>
+                <div class="postback__row">
+                    <div class="postback__item">
+                        <label class="input__label" for="name">Signup</label>
+                        <textarea class="input input--text postback__input--text" type="text" name="message"
+                            placeholder="Enter name"></textarea>
+                    </div>
+                    <div class="postback__item  postback__item--last">
+                        <label class="input__label" for="name">Deposit</label>
+                        <textarea class="input input--text postback__input--text" type="text" name="message"
+                            placeholder="Enter name"></textarea>
+                    </div>
+                </div>
+                <div class="postback__row">
+                    <div class="postback__item ">
+                        <label class="input__label" for="name">Postback type</label>
+                        <select class="input" name="type">
+                            <option value="0" disabled selected hidden>S2S(http//:)</option>
+                            <option value="S2S">S2S(http//:)</option>
+                            <option value="S3S">S3S(http//:)</option>
+                        </select>
+                    </div>
+                    <div class="postback__item ">
+                        <label class="input__label" for="name">To countries</label>
+                        <select class="input" name="counries" placeholder="Enter name">
+                            <option value="0" disabled selected hidden>Select countries</option>
+                            <option value="Poland">Poland</option>
+                            <option value="England">England</option>
+                        </select>
+                    </div>
+                    <div class="postback__item postback__item--last">
+                        <label class="input__label" for="name">Sending options</label>
+                        <select class="input" name="options" placeholder="Enter name">
+                            <option value="0" disabled selected hidden>Select</option>
+                            <option value="now">Now</option>
+                            <option value="formated">Formated</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="postback__row">
+                    <div class="postback__wrapper ">
+                        <p class="input__label">NOT send statuses</p>
+                        <label class="checkbox">checkNumber
+                            <input type="checkbox" checked="checked">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">noAnswer
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">noCall
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">callAgain
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">answer
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+
+                    </div>
+                    <div class="postback__wrapper ">
+                        <div class="postback__item ">
+                            <label class="input__label">Send after:</label>
+                            <input class="input--range" min="0" max="168" type="range" name="after" id="range_after" oninput="range_after_disp.value = range_after.value">
+                            <output  id="range_after_disp"></output>
+                        </div>
+                    </div>
+                </div>
+                <div class="sections__row sections__row--right">
+                    <button class="button" type="submit">Create Pixel</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <script src="js/script.js"></script>
 </body>
 

@@ -142,6 +142,9 @@
       case 'personal-data':
         document.getElementById('section-personal-data').style.display = 'block';
         break;
+        case 'postback':
+        document.getElementById('section-postback').style.display = 'block';
+        break;  
     }
   }
 })();

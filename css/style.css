@@ -525,7 +525,7 @@ template {
 }
 
 .input {
-  margin: 10px 0;
+  margin: 15px 0;
   height: 40px;
   padding: 10px;
   border: 1px solid #e3e3e3;
@@ -538,10 +538,15 @@ template {
 }
 
 .input__label {
-  margin: 20px;
+  margin: 15px 0;
   font-size: 16px;
   font-weight: 700;
   color: #979797;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #333333;
 }
 
 .input:focus:invalid {
@@ -566,8 +571,8 @@ template {
 .input--text {
   padding-top: 15px;
   padding-right: 15px;
-  min-width: 160px;
-  min-height: 120px;
+  min-width: 150px;
+  min-height: 150px;
   font-size: 12px;
 }
 
@@ -577,6 +582,88 @@ template {
   background-size: 20px;
   background-position: center left;
   background-repeat: no-repeat;
+}
+
+.input--range {
+  width: 100%;
+  height: 50px;
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  outline: none;
+  /* Special styling for WebKit/Blink */
+  /* All the same stuff for Firefox */
+  /* All the same stuff for IE */
+}
+
+.input--range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: 10px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #f58220;
+  cursor: pointer;
+}
+
+.input--range::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #f58220;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.input--range::-ms-thumb {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #f58220;
+  cursor: pointer;
+}
+
+.input--range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #f58220;
+}
+
+.input--range::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #f58220;
+}
+
+.input--range::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #f58220;
+}
+
+.input--range::-ms-fill-lower {
+  background: #f58220;
+}
+
+.input--range:focus::-ms-fill-lower {
+  background: #f58220;
+}
+
+.input--range::-ms-fill-upper {
+  background: #f58220;
+}
+
+.input--range:focus::-ms-fill-upper {
+  background: #f58220;
 }
 
 @media (max-width: 767px) {
@@ -595,8 +682,6 @@ template {
   width: 240px;
   position: relative;
   padding-left: 50px;
-  margin-bottom: 15px;
-  margin-left: 15px;
   cursor: pointer;
   font-size: 14px;
   user-select: none;
@@ -1245,6 +1330,64 @@ template {
   }
 }
 
+.postback {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: #fff;
+  flex-direction: column;
+}
+
+.postback__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postback__item {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0 0 0 15px;
+  width: 100%;
+}
+
+.postback__item--last {
+  padding: 0 15px;
+}
+
+.postback__wrapper {
+  display: block;
+  width: 100%;
+  height: 250px;
+  padding: 15px;
+  margin: 20px 0;
+  overflow-x: auto;
+  border: 1px solid #e3e3e3;
+}
+
+.postback__input {
+  width: 250px;
+}
+
+.postback__input--text {
+  width: 100%;
+  resize: none;
+}
+
+@media (max-width: 767px) {
+  .postback {
+    width: auto;
+  }
+  .postback__row {
+    flex-direction: column;
+  }
+  .postback__item {
+    padding: 0 15px;
+  }
+}
+
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -1288,6 +1431,10 @@ body {
 
 .sections__row--header {
   justify-content: flex-start;
+}
+
+.sections__row--right {
+  justify-content: flex-end;
 }
 
 .sections__hr {
