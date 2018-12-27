@@ -51,19 +51,19 @@
                 <a class="link link--small" href="#">Michael E.</a> <br>
             </div>
             <div class="menu__mobile">
-                <div class="menu__item menu__item--mobile">
+                <div class="menu__item--mobile">
                     <i class="menu__icon icon-wallet"></i>
                     <p class="menu__text">$1,500.00</p>
                     <i class="menu__icon icon-arrow-down-small"></i>
                 </div>
-                <div class="menu__item menu__item--mobile">
-                    <i class="menu__icon icon-profile"></i>
-                    <a class="link link--small" href="#">Leonardo Dicaprio</a>
+                <div class="menu__item--mobile">
+                    <i id="logout" class="menu__icon icon-profile"></i>
+                    <a id="logout" class="link link--small" href="#">Leonardo Dicaprio</a>
                 </div>
-                <a class="menu__item menu__item--mobile" href="#">
-                    <img class="menu__icon top-menu__icon--button" src="images/icons/notification.svg">
-                    <i class="menu__icon icon-quit"></i>
-                </a>
+                <div class="menu__item--mobile">
+                    <img  class="menu__icon top-menu__icon--button" src="images/icons/notification.svg">
+                    <i id="exit" class="menu__icon icon-quit"></i>
+                </div>
             </div>
         </div>
         <div id="top-menu" class="top-menu col-lg-10">
@@ -75,10 +75,10 @@
             <div class="top-menu__vl"></div>
             <button class="top-menu__button"><img class="top-menu__icon top-menu__icon--button" src="images/icons/notification.svg"></button>
             <div class="top-menu__vl"></div>
-            <i class="top-menu__icon icon-profile"></i>
+            <button id="logout" class="top-menu__button"><i id="logout"  class="top-menu__icon icon-profile"></i></button>
             <a class="link link--small" href="#">Leonardo Dicaprio</a>
             <div class="top-menu__vl"></div>
-            <button class="top-menu__button"><i class="top-menu__icon top-menu__icon--button icon-quit"></i></button>
+            <button id="exit" class="top-menu__button"><i class="top-menu__icon top-menu__icon--button icon-quit"></i></button>
         </div>
     </nav>
     <section id="section-general" class="sections sections--first col-lg-10 col-sm-12">
@@ -534,7 +534,6 @@
                             <input type="checkbox">
                             <span class="checkbox__span"></span>
                         </label>
-
                     </div>
                     <div class="postback__wrapper ">
                         <div class="postback__item ">
@@ -554,7 +553,28 @@
             </form>
         </div>
     </section>
-
+    <div class="overlay" id="overlay">
+        <div class="modal" id="quit">
+            <p class="section-header">Do you really want to Quit?</p>
+            <hr class="sections__hr">
+            <div class="sections__row sections__row--right">
+                <button class="button button--grey js--close-modal">Cancel</button>
+                <button class="button js--close-modal">Quit</button>
+            </div>
+        </div>
+        <div class="modal" id="login">
+            <p class="page-header">LOGIN</p>
+            <hr class="sections__hr">
+            <div class="sections__row sections__row--space">
+                <input class="input" type="text" name="name" placeholder="Enter Login" required pattern="^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{3,20}$"
+                    title="Must be minimum 3 charset only leters">
+                <input class="input input--password"  minlength="8" type="password" name="password"
+                    placeholder="Enter password" required>
+                    <button class="button js--close-modal">Enter</button>    
+            </div>
+        </div>
+        </div>
+        </div>
     <script src="js/script.js"></script>
 </body>
 

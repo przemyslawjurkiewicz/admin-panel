@@ -13,6 +13,7 @@
 @import "./sass/components/single-list";
 @import "./sass/components/glyphter";
 @import "./sass/components/pagination";
+@import "./sass/components/modal";
 @import "./sass/sections/personal-data";
 @import "./sass/sections/postback";
 
@@ -62,6 +63,10 @@ body {
     }
     &--right {
       justify-content: flex-end;
+    }
+    &--space {
+      justify-content: space-around;
+      flex-wrap: nowrap;
     }
   }
 
