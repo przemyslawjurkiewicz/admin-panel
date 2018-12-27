@@ -1,8 +1,4 @@
 @mixin thumb {
-  // height: 36px;
-  // width: 16px;
-  // background: $orange;
-
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
@@ -17,7 +13,6 @@
   cursor: pointer;
   background: $orange;
 }
-
 
 .input {
   margin: 15px 0;
@@ -62,11 +57,6 @@
     border: 1px solid $orange-light;
   }
 
-
-  //&:valid {
-  //   border: 1px solid $green;
-  // }
-
   &--text {
     padding-top: 15px;
     padding-right: 15px;
@@ -94,7 +84,6 @@
     /* Special styling for WebKit/Blink */
     &::-webkit-slider-thumb {
       -webkit-appearance: none;
-      appearance: none;
       margin-top: 10px;
       @include thumb;
     }
@@ -102,14 +91,17 @@
     /* All the same stuff for Firefox */
     &::-moz-range-thumb {
       -moz-appearance: none;
-      appearance: none;
       @include thumb;
-      margin-top: 5px;
+      background: none;
+      height: 26px;
+      border-top: none;
+      border-radius: 0;
     }
 
     /* All the same stuff for IE */
     &::-ms-thumb {
       @include thumb;
+      height: 22px;
     }
 
     &::-webkit-slider-runnable-track {
@@ -139,9 +131,7 @@
     &:focus::-ms-fill-upper {
       background: $orange;
     }
-
   }
-
 }
 
 @media (max-width: 767px) {

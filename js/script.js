@@ -121,6 +121,12 @@
     }
   }
 
+//First site on load index.html
+  window.onload = function() {
+    clearView();
+    switchView('general');
+  }
+
   //Switch view in right column after menu item clicked 
   function switchView(id) {
     switch (id) {

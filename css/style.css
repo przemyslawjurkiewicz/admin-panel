@@ -598,7 +598,6 @@ template {
 
 .input--range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none;
   margin-top: 10px;
   width: 0;
   height: 0;
@@ -610,14 +609,16 @@ template {
 
 .input--range::-moz-range-thumb {
   -moz-appearance: none;
-  appearance: none;
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 20px solid #f58220;
   cursor: pointer;
-  margin-top: 5px;
+  background: none;
+  height: 26px;
+  border-top: none;
+  border-radius: 0;
 }
 
 .input--range::-ms-thumb {
@@ -627,6 +628,7 @@ template {
   border-right: 20px solid transparent;
   border-bottom: 20px solid #f58220;
   cursor: pointer;
+  height: 22px;
 }
 
 .input--range::-webkit-slider-runnable-track {
@@ -1529,7 +1531,7 @@ body {
   }
   .sections__row--always-row {
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 }
 
