@@ -61,7 +61,7 @@
                     <a id="logout" class="link link--small" href="#">Leonardo Dicaprio</a>
                 </div>
                 <div class="menu__item--mobile">
-                    <img  class="menu__icon top-menu__icon--button" src="images/icons/notification.svg">
+                    <img class="menu__icon top-menu__icon--button" src="images/icons/notification.svg">
                     <i id="exit" class="menu__icon icon-quit"></i>
                 </div>
             </div>
@@ -75,7 +75,7 @@
             <div class="top-menu__vl"></div>
             <button class="top-menu__button"><img class="top-menu__icon top-menu__icon--button" src="images/icons/notification.svg"></button>
             <div class="top-menu__vl"></div>
-            <button id="logout" class="top-menu__button"><i id="logout"  class="top-menu__icon icon-profile"></i></button>
+            <button id="logout" class="top-menu__button"><i id="logout" class="top-menu__icon icon-profile"></i></button>
             <a class="link link--small" href="#">Leonardo Dicaprio</a>
             <div class="top-menu__vl"></div>
             <button id="exit" class="top-menu__button"><i class="top-menu__icon top-menu__icon--button icon-quit"></i></button>
@@ -355,7 +355,7 @@
             </div>
             <hr class="sections__hr">
             <div class="sections__row">
-                <button class="button">+ add new</button>
+                <button id="js--add-banners" class="button">+ add new</button>
             </div>
             <div class="sections__row">
                 <table class="table-links">
@@ -398,7 +398,7 @@
                 </table>
             </div>
             <div class="sections__row">
-                <button class="button">+ add new</button>
+                <button id="js--add-banners" class="button">+ add new</button>
             </div>
         </div>
     </section>
@@ -408,55 +408,54 @@
                 <h1 class="page-header">Personal data</h1>
             </div>
             <hr class="sections__hr">
-            <form action="" method="POST" class="personal-data">
-                <div class="personal-data__row">
+            <form action="" method="POST" class="form form--center">
+                <div class="form__row col-lg-4 ">
                     <label class="input__label" for="name">Name</label>
-                    <input class="input personal-data__input" type="text" name="name" placeholder="Enter name" required
+                    <input class="input" type="text" name="name" maxlength="150" placeholder="Enter name" required
                         pattern="^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{3,20}$" title="Must be minimum 3 charset only leters">
                 </div>
-                <div class="personal-data__row">
+                <div class="form__row col-lg-4 ">
                     <label class="input__label">Surename</label>
-                    <input class="input personal-data__input" type="text" name="family-name" placeholder="Enter surename"
-                        required pattern="^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{3,20}$" title="Must be minimum 3 charset only leters">
+                    <input class="input" type="text" name="family-name" placeholder="Enter surename" required pattern="^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{3,20}$"
+                        title="Must be minimum 3 charset only leters">
                 </div>
-                <div class="personal-data__row">
+                <div class="form__row col-lg-4 ">
                     <label class="input__label">E-mail</label>
-                    <input class="input personal-data__input" type="email" name="email" placeholder="Enter email"
+                    <input class="input" type="email" name="email" placeholder="Enter email" required>
+                </div>
+                <div class="form__row col-lg-4">
+                    <label class="input__label">Phone number</label>
+                    <input class="input" type="tel" name="tel" placeholder="Enter phone number" value="+48 " pattern="^[\+]\d{2}\s[0-9]{9}|[\+]\d{2}\s[0-9\s]{11}$"
                         required>
                 </div>
-                <div class="personal-data__row">
-                    <label class="input__label">Phone number</label>
-                    <input class="input personal-data__input" type="tel" name="tel" placeholder="Enter phone number"
-                        value="+48 " pattern="^[\+]\d{2}\s[0-9]{9}|[\+]\d{2}\s[0-9\s]{11}$" required>
-                </div>
                 <hr class="sections__hr">
-                <div class="personal-data__row">
+                <div class="form__row col-lg-4">
                     <label class="input__label">Skype</label>
-                    <input class="input personal-data__input" type="text" name="skype" placeholder="Enter Skype">
+                    <input class="input" type="text" maxlength="150" name="skype" placeholder="Enter Skype">
                 </div>
-                <div class="personal-data__row">
+                <div class="form__row col-lg-4">
                     <label class="input__label">ICQ</label>
-                    <input class="input personal-data__input" type="text" name="icq" placeholder="Enter ICQ">
+                    <input class="input" type="text" name="icq" placeholder="Enter ICQ">
                 </div>
-                <div class="personal-data__row">
+                <div class="form__row col-lg-4">
                     <label class="input__label">Msn</label>
-                    <input class="input personal-data__input" type="text" name="msn" placeholder="Enter Msn">
+                    <input class="input" type="text" name="msn" placeholder="Enter Msn">
                 </div>
-                <hr class="sections__hr">
-                <div class="personal-data__row">
+                <hr class="sections__hr ">
+                <div class="form__row col-lg-4">
                     <label class="input__label">Wallet</label>
-                    <input class="input personal-data__input" type="text" name="wallet" placeholder="Enter wallet">
+                    <input class="input" type="text" name="wallet" placeholder="Enter wallet">
                 </div>
                 <hr class="sections__hr">
-                <div class="personal-data__row">
+                <div class="form__row col-lg-4">
                     <label class="input__label">Password</label>
-                    <input class="input input--password personal-data__input" id="password" minlength="8" type="password"
-                        name="password" placeholder="Enter password" required>
+                    <input class="input input--password" id="password" minlength="8" type="password" name="password"
+                        placeholder="Enter password" required>
                 </div>
-                <div class="personal-data__row">
+                <div class="form__row col-lg-4">
                     <label class="input__label">Repeat</label>
-                    <input class="input input--password personal-data__input" id="password-repeat" minlength="8" type="password"
-                        name="passworRepeat" placeholder="Repeat password" required>
+                    <input class="input input--password" id="password-repeat" minlength="8" type="password" name="passworRepeat"
+                        placeholder="Repeat password" required>
                 </div>
                 <hr class="sections__hr">
                 <div class="sections__row">
@@ -465,85 +464,86 @@
             </form>
         </div>
     </section>
-    <section id="section-postback"  class="sections sections--first col-lg-10 col-sm-12">
+    <section id="section-postback" class="sections sections--first col-lg-10 col-sm-12">
         <div class="sections__container sections__container--fluid">
             <div class="sections__row sections__row--header">
                 <h1 class="page-header">New postback</h1>
             </div>
             <hr class="sections__hr">
-            <form action="" method="POST" class="postback">
+            <form action="" method="POST" class="form">
                 <p class="dark-text">You can insert some parameters in this postback</p>
-                <div class="postback__row">
-                    <div class="postback__item">
+                <div class="form__row">
+                    <div class="form__item">
                         <label class="input__label" for="name">Signup</label>
-                        <textarea class="input input--text postback__input--text" type="text" name="message"
-                            placeholder="Enter name"></textarea>
+                        <textarea class="input input--text" type="text" name="message" placeholder="Enter name"></textarea>
                     </div>
-                    <div class="postback__item  postback__item--last">
+                    <div class="form__item  form__item--last">
                         <label class="input__label" for="name">Deposit</label>
-                        <textarea class="input input--text postback__input--text" type="text" name="message"
-                            placeholder="Enter name"></textarea>
+                        <textarea class="input input--text" type="text" name="message" placeholder="Enter name"></textarea>
                     </div>
                 </div>
-                <div class="postback__row">
-                    <div class="postback__item ">
-                        <label class="input__label" for="name">Postback type</label>
+                <div class="form__row">
+                    <div class="form__item ">
+                        <label class="input__label">Postback type</label>
                         <select class="input" name="type">
                             <option value="0" disabled selected hidden>S2S(http//:)</option>
                             <option value="S2S">S2S(http//:)</option>
                             <option value="S3S">S3S(http//:)</option>
                         </select>
                     </div>
-                    <div class="postback__item ">
-                        <label class="input__label" for="name">To countries</label>
-                        <select class="input" name="counries" placeholder="Enter name">
+                    <div class="form__item ">
+                        <label class="input__label">To countries</label>
+                        <select class="input" name="counries">
                             <option value="0" disabled selected hidden>Select countries</option>
                             <option value="Poland">Poland</option>
                             <option value="England">England</option>
                         </select>
                     </div>
-                    <div class="postback__item postback__item--last">
-                        <label class="input__label" for="name">Sending options</label>
-                        <select class="input" name="options" placeholder="Enter name">
+                    <div class="form__item form__item--last">
+                        <label class="input__label">Sending options</label>
+                        <select class="input" name="options">
                             <option value="0" disabled selected hidden>Select</option>
                             <option value="now">Now</option>
                             <option value="formated">Formated</option>
                         </select>
                     </div>
                 </div>
-                <div class="postback__row">
-                    <div class="postback__wrapper ">
+                <div class="form__row">
+                    <div class="form__wrapper ">
                         <p class="input__label">NOT send statuses</p>
-                        <label class="checkbox">checkNumber
-                            <input type="checkbox" checked="checked">
-                            <span class="checkbox__span"></span>
-                        </label>
-                        <label class="checkbox">noAnswer
-                            <input type="checkbox">
-                            <span class="checkbox__span"></span>
-                        </label>
-                        <label class="checkbox">noCall
-                            <input type="checkbox">
-                            <span class="checkbox__span"></span>
-                        </label>
-                        <label class="checkbox">callAgain
-                            <input type="checkbox">
-                            <span class="checkbox__span"></span>
-                        </label>
-                        <label class="checkbox">answer
-                            <input type="checkbox">
-                            <span class="checkbox__span"></span>
-                        </label>
+                        <div class="form__wrapper--sliding">
+                            <label class="checkbox">checkNumber
+                                <input type="checkbox" checked="checked">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">noAnswer
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">noCall
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">callAgain
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">answer
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                        </div>
                     </div>
-                    <div class="postback__wrapper ">
-                        <div class="postback__item ">
+                    <div class="form__wrapper ">
+                        <div class="form__item ">
                             <label class="input__label">Send after:</label>
-                            <input class="input--range" min="0" max="168" type="range" name="after" id="range_after" list="tickmarks" oninput="range_after_disp.value = range_after.value">
+                            <input class="input--range" min="0" max="168" type="range" name="after" id="range_after"
+                                list="tickmarks" oninput="range_after_disp.value = range_after.value">
                             <datalist id="tickmarks">
                                 <option value="0" label="0">
                                 <option value="0" label="168">
-                                </datalist>
-                            <output  id="range_after_disp"></output>
+                            </datalist>
+                            <output id="range_after_disp"></output>
                         </div>
                     </div>
                 </div>
@@ -568,13 +568,142 @@
             <div class="sections__row sections__row--space">
                 <input class="input" type="text" name="name" placeholder="Enter Login" required pattern="^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{3,20}$"
                     title="Must be minimum 3 charset only leters">
-                <input class="input input--password"  minlength="8" type="password" name="password"
-                    placeholder="Enter password" required>
-                    <button class="button js--close-modal">Enter</button>    
+                <input class="input input--password" minlength="8" type="password" name="password" placeholder="Enter password"
+                    required>
+                <button class="button js--close-modal">Enter</button>
             </div>
         </div>
+        <div class="modal" id="add-banners">
+            <p class="page-header">Add banners</p>
+            <div class="modal__btn-close js--close-modal">x</div>
+            <hr class="sections__hr">
+           
+                <div class="form__row">
+                    <div class="form__item ">
+                        <label class="input__label" for="name">Scheme name</label>
+                        <select class="input" name="type">
+                            <option value="0" disabled selected hidden>Name</option>
+                            <option value="main">Main</option>
+                            <option value="eden">Eden</option>
+                        </select>
+                    </div>
+                    <div class="form__item ">
+                        <label class="input__label" for="name">Compain</label>
+                        <select class="input" name="type">
+                            <option value="0" disabled selected hidden>Select</option>
+                            <option value="one">One</option>
+                            <option value="two">Two</option>
+                        </select>
+                    </div>
+                    <div class="form__item form__item--last form__item--small ">
+                        <label class="input__label" for="name">Lanquage</label>
+                        <select class="input input--small" name="type">
+                            <option value="en">EN</option>
+                            <option value="pl">PL</option>
+                        </select>
+                    </div>
+                </div>
+            
+            
+                <div class="form__row">
+                    <div class="form__item ">
+                        <label class="input__label" for="name">Weigh-Height</label>
+                        <select class="input" name="type">
+                            <option value="0" disabled selected hidden>Select</option>
+                            <option value="small">Small</option>
+                            <option value="bold">Bold</option>
+                        </select>
+                    </div>
+                    <div class="form__item ">
+                        <label class="input__label" for="name">Design</label>
+                        <select class="input" name="type">
+                            <option value="0" disabled selected hidden>Select</option>
+                            <option value="flat">Flat</option>
+                            <option value="border">Border</option>
+                        </select>
+                    </div>
+                    <div class="form__item form__item--last ">
+                        <label class="input__label" for="name">File type</label>
+                        <select class="input" name="type">
+                            <option value="all">All</option>
+                            <option value="jpg">.jpg</option>
+                        </select>
+                    </div>
+                </div>
+            
+            <div class="form__row">
+                <div class="form__wrapper">
+                    <p class="input__label">Select Banners</p>
+                    <div class="form__wrapper--sliding">
+                        <label class="checkbox">Banner mine
+                            <input type="checkbox" >
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">Signup banner
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">Left banner
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">Right banner
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">Top banner
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">Botton banner
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">PopUp
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">Footer
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__wrapper ">
+                    <p class="input__label">Select Sites</p>
+                    <div class="form__wrapper--sliding">
+                        <label class="checkbox">Main page
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">Top store
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">About
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">Login
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                        <label class="checkbox">Wallet
+                            <input type="checkbox">
+                            <span class="checkbox__span"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form__row form__row--right">
+                    <input class="input"  type="text" width="500" name="link" placeholder="Generated link">
+                    <button class="button button--disabled js--close-modal">Copy Link</button>   
+                <button class="button js--close-modal">Save</button>
+
+            </div>
         </div>
-        </div>
+
+    </div>
     <script src="js/script.js"></script>
 </body>
 

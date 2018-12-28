@@ -21,13 +21,14 @@
   border: 1px solid $lavender;
   border-radius: 3px;
   color: $dark;
-
+  min-width: 250px;
+ 
   &::placeholder {
     color: $grey-light;
   }
 
   &__label {
-    margin: 15px 0;
+    margin: 15px 0 0;
     font-size: $normal-font-size;
     font-weight: 700;
     color: $grey;
@@ -57,12 +58,18 @@
     border: 1px solid $orange-light;
   }
 
+  &--small{
+    min-width: 100px;
+  }
+  
   &--text {
     padding-top: 15px;
     padding-right: 15px;
     min-width: 150px;
     min-height: 150px;
     font-size: $small-font-size;
+    width: 100%;
+    resize: none;
   }
 
   &--password {

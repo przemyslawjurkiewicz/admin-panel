@@ -22,17 +22,20 @@
 }
 
 .modal {
-  max-width: 800px;
+  //max-width: 800px;
   margin: auto;
   background-color: #ffffff;
   position: relative;
-  padding: 30px;
+  padding: 0 30px 30px;
   display: none;
   &__btn-close {
     position: absolute;
+    color: $grey;
+    font-size: $normal-font-size;
     top: 0;
     right: 0;
     padding: 5px 10px;
+    cursor: pointer;
   }
   &--show {
     display: block;

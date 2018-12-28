@@ -531,6 +531,7 @@ template {
   border: 1px solid #e3e3e3;
   border-radius: 3px;
   color: #333333;
+  min-width: 250px;
 }
 
 .input::placeholder {
@@ -538,7 +539,7 @@ template {
 }
 
 .input__label {
-  margin: 15px 0;
+  margin: 15px 0 0;
   font-size: 16px;
   font-weight: 700;
   color: #979797;
@@ -568,12 +569,18 @@ template {
   border: 1px solid #ffa200;
 }
 
+.input--small {
+  min-width: 100px;
+}
+
 .input--text {
   padding-top: 15px;
   padding-right: 15px;
   min-width: 150px;
   min-height: 150px;
   font-size: 12px;
+  width: 100%;
+  resize: none;
 }
 
 .input--password {
@@ -681,7 +688,6 @@ template {
   display: block;
   padding: 15px;
   height: 45px;
-  width: 240px;
   position: relative;
   padding-left: 50px;
   cursor: pointer;
@@ -727,7 +733,7 @@ template {
   background-color: #e3e3e3;
   background-image: url("../images/icons/show.svg");
   background-size: 20px;
-  background-position: 200px 13px;
+  background-position: right center;
   background-repeat: no-repeat;
 }
 
@@ -1327,55 +1333,28 @@ template {
 }
 
 .modal {
-  max-width: 800px;
   margin: auto;
   background-color: #ffffff;
   position: relative;
-  padding: 30px;
+  padding: 0 30px 30px;
   display: none;
 }
 
 .modal__btn-close {
   position: absolute;
+  color: #979797;
+  font-size: 16px;
   top: 0;
   right: 0;
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 .modal--show {
   display: block;
 }
 
-.personal-data {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  flex-direction: column;
-}
-
-.personal-data__row {
-  width: 35%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.personal-data__input {
-  width: 250px;
-}
-
-@media (max-width: 767px) {
-  .personal-data {
-    width: auto;
-  }
-  .personal-data__row {
-    flex-direction: column;
-  }
-}
-
-.postback {
+.form {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -1383,14 +1362,22 @@ template {
   flex-direction: column;
 }
 
-.postback__row {
+.form--center {
+  align-items: center;
+}
+
+.form__row {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.postback__item {
+.form__row--right {
+  justify-content: flex-end;
+}
+
+.form__item {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -1398,37 +1385,36 @@ template {
   width: 100%;
 }
 
-.postback__item--last {
+.form__item--last {
   padding: 0 15px;
 }
 
-.postback__wrapper {
+.form__item--small {
+  flex-basis: 100px;
+}
+
+.form__wrapper {
   display: block;
   width: 100%;
-  height: 250px;
   padding: 15px;
   margin: 20px 0;
-  overflow-x: auto;
   border: 1px solid #e3e3e3;
+  height: 250px;
 }
 
-.postback__input {
-  width: 250px;
-}
-
-.postback__input--text {
-  width: 100%;
-  resize: none;
+.form__wrapper--sliding {
+  overflow-x: auto;
+  height: 200px;
 }
 
 @media (max-width: 767px) {
-  .postback {
+  .form {
     width: auto;
   }
-  .postback__row {
+  .form__row {
     flex-direction: column;
   }
-  .postback__item {
+  .form__item {
     padding: 0 15px;
   }
 }

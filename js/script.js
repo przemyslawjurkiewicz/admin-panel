@@ -207,4 +207,9 @@
     });
   });
 
+  document.getElementById('js--add-banners').addEventListener("click", function() {
+    openModal("#add-banners");
+});
+
+
   })();
