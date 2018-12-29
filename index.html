@@ -122,16 +122,10 @@
                 <div class="col-lg-3 col-sm-12">
                     <h2 class="section-header">Earning chart</h2>
                 </div>
-                <div class="col-lg-3 col-sm-12"></div>
             </div>
             <div class="sections__row">
-                <button class="button button--tab"><img class="circle" src="images/circleBlue.svg">Signups</button>
-                <button class="button button--tab"><img class="circle" src="images/circleOrange.svg">FTP</button>
-                <button class="button button--tab"><img class="circle" src="images/circleGreen.svg">Earned</button>
-            </div>
-            <div class="sections__row">
-                <img class="image" src="images/chart.png">
-            </div>
+            <canvas class="chart col-lg-8 col-sm-12" id="myChart"></canvas>
+        </div>
         </div>
     </section>
     <section id="section-links" class="sections col-lg-10 col-sm-12">
@@ -930,11 +924,12 @@
             </div>
             <hr class="sections__hr">
             <div class="form__row form__row--right">
-                    <input class="input input--max" type="text"  name="message" placeholder="Enter the message">
-                    <button class="button js--close-modal">Send</button>
+                <input class="input input--max" type="text" name="message" placeholder="Enter the message">
+                <button class="button js--close-modal">Send</button>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
