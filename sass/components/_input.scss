@@ -61,6 +61,9 @@
   &--small{
     min-width: 100px;
   }
+  &--max{
+    flex: 1;
+  }
   
   &--text {
     padding-top: 15px;

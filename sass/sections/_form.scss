@@ -14,9 +14,12 @@
     justify-content: space-between;
     align-items: center;
     &--right {
-        justify-content: flex-end;
-      }
-}
+      justify-content: flex-end;
+    }
+    &--left {
+      justify-content: flex-start;
+    }
+  }
 
   &__item {
     display: flex;
@@ -24,13 +27,16 @@
     margin: auto;
     padding: 0 0 0 15px;
     width: 100%;
+    &--left {
+      align-items: flex-start;
+    }
     &--last {
       padding: 0 15px;
     }
     &--small {
-        flex-basis: 100px;
+      flex-basis: 100px;
     }
-}
+  }
 
   &__wrapper {
     display: block;
@@ -39,9 +45,9 @@
     margin: 20px 0;
     border: 1px solid $lavender;
     height: 250px;
-    &--sliding{
-        overflow-x: auto;
-        height: 200px;
+    &--sliding {
+      
+      height: 200px;
     }
   }
 }
@@ -52,6 +58,10 @@
 
     &__row {
       flex-direction: column;
+      align-items: center;
+      &--left {
+        align-items: flex-start;
+      }
     }
 
     &__item {

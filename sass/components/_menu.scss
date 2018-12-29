@@ -1,5 +1,6 @@
 .menu {
   position: fixed;
+  z-index: 999;
   background: #191919;
   height: 100%;
 
@@ -133,8 +134,13 @@
     }
   }
 
-  &__manager--mini {
-    display: none;
+  &__manager {
+    &--mini {
+      display: none;
+    }
+    &--image {
+      cursor: pointer;
+    }
   }
 }
 

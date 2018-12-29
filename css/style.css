@@ -573,6 +573,10 @@ template {
   min-width: 100px;
 }
 
+.input--max {
+  flex: 1;
+}
+
 .input--text {
   padding-top: 15px;
   padding-right: 15px;
@@ -693,6 +697,7 @@ template {
   cursor: pointer;
   font-size: 14px;
   user-select: none;
+  flex: 1;
 }
 
 .checkbox:focus {
@@ -960,6 +965,7 @@ template {
 
 .menu {
   position: fixed;
+  z-index: 999;
   background: #191919;
   height: 100%;
 }
@@ -1096,6 +1102,10 @@ template {
 
 .menu__manager--mini {
   display: none;
+}
+
+.menu__manager--image {
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -1377,12 +1387,20 @@ template {
   justify-content: flex-end;
 }
 
+.form__row--left {
+  justify-content: flex-start;
+}
+
 .form__item {
   display: flex;
   flex-direction: column;
   margin: auto;
   padding: 0 0 0 15px;
   width: 100%;
+}
+
+.form__item--left {
+  align-items: flex-start;
 }
 
 .form__item--last {
@@ -1403,7 +1421,6 @@ template {
 }
 
 .form__wrapper--sliding {
-  overflow-x: auto;
   height: 200px;
 }
 
@@ -1413,10 +1430,85 @@ template {
   }
   .form__row {
     flex-direction: column;
+    align-items: center;
+  }
+  .form__row--left {
+    align-items: flex-start;
   }
   .form__item {
     padding: 0 15px;
   }
+}
+
+.chat__online {
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background: #04ae00;
+  font-size: 12px;
+  min-width: 0;
+  height: auto;
+}
+
+.chat__manager {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.chat__wrapper {
+  height: 250px;
+  overflow-x: auto;
+}
+
+.chat__massage-manager {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px;
+  color: #333333;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f5f5f2;
+  border: 1px solid #f5f5f2;
+}
+
+.chat__massage-manager:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid #f5f5f2;
+  top: -10px;
+  left: -9px;
+  transform: rotate(-90deg);
+}
+
+.chat__massage-client {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px;
+  color: #333333;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #bababa;
+  border: 1px solid #bababa;
+}
+
+.chat__massage-client:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid #bababa;
+  bottom: -1px;
+  right: -9px;
+  transform: rotate(90deg);
 }
 
 * {
@@ -1466,6 +1558,10 @@ body {
 
 .sections__row--right {
   justify-content: flex-end;
+}
+
+.sections__row--left {
+  justify-content: flex-start;
 }
 
 .sections__row--space {

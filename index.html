@@ -47,8 +47,8 @@
             <hr class="menu__line">
             <h2 class="menu__text menu__text--manager">YOUR MANAGER</h2>
             <div class="menu__header menu__manager">
-                <img class="menu__manager-image" src="images/manager.png" alt="">
-                <a class="link link--small" href="#">Michael E.</a> <br>
+                <img id="js--chat" class="menu__manager--image" src="images/manager.png" alt="">
+                <a id="js--chat" class="link link--small" href="#">Michael E.</a> <br>
             </div>
             <div class="menu__mobile">
                 <div class="menu__item--mobile">
@@ -141,7 +141,7 @@
             </div>
             <hr class="sections__hr">
             <div class="sections__row">
-                <button class="button">+ add new</button>
+                <button id="js--add-links" class="button">+ add new</button>
             </div>
             <div class="sections__row">
                 <table class="table-links">
@@ -202,7 +202,7 @@
                 </table>
             </div>
             <div class="sections__row">
-                <button class="button">+ add new</button>
+                <button id="js--add-links" class="button">+ add new</button>
             </div>
         </div>
     </section>
@@ -346,8 +346,6 @@
             </div>
         </div>
     </section>
-
-
     <section id="section-baners" class="sections sections--first col-lg-10 col-sm-12">
         <div class="sections__container sections__container--fluid">
             <div class="sections__row sections__row--header">
@@ -464,6 +462,93 @@
             </form>
         </div>
     </section>
+
+    <section id="section-payout" class="sections sections--first col-lg-10 col-sm-12">
+        <div class="sections__container sections__container--fluid">
+            <div class="sections__row sections__row--header">
+                <h1 class="page-header">Payout history</h1>
+            </div>
+            <hr class="sections__hr">
+            <div class="sections__row">
+                <div class="date-period">
+                    <input class="date-period__input date-period__input--first" type="text" maxlength="10" value="2018-01-01">
+                    <input class="date-period__input" type="text" maxlength="10" value="2018-12-01">
+                </div>
+                <button class="button button--small"><i class="icon-refresh button__icon"></i>
+                </button>
+            </div>
+            <hr class="sections__hr">
+            <div class="sections__row">
+                <div class="sections__wrapper">
+                    <table class="table-large">
+                        <thead>
+                            <th class="table-large__head"><span class="table-large__span">Date</span></th>
+                            <th class="table-large__head"><span class="table-large__span">Amount($)</span></th>
+                            <th class="table-large__head"><span class="table-large__span">Deal</span></th>
+                            <th class="table-large__head"><span class="table-large__span">Account</span></th>
+                        </thead>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                            <td class="table-large__item">Bank</td>
+                        </tr>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                            <td class="table-large__item">Bank</td>
+                        </tr>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                            <td class="table-large__item">Bank</td>
+                        </tr>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                            <td class="table-large__item">Bank</td>
+                        </tr>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                            <td class="table-large__item">Bank</td>
+                        </tr>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                            <td class="table-large__item">Bank</td>
+                        </tr>
+                        <tr class="table-large__row">
+                            <td class="table-large__item">17/08/02(12:58)</td>
+                            <td class="table-large__item">34,425.00</td>
+                            <td class="table-large__item">cpl(200)</td>
+                            <td class="table-large__item">Bank</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="sections__row sections__row--always-row">
+                <i class="icon-arrow-left pagination__icon"></i>
+                <button class="pagination__button">1</button>
+                <button class="pagination__button">2</button>
+                <button class="pagination__button">3</button>
+                <button class="pagination__button">4</button>
+                <button class="pagination__button">5</button>
+                <button class="pagination__button">6</button>
+                <button class="pagination__button">7</button>
+                <button class="pagination__button">8</button>
+                <button class="pagination__button">9</button>
+                <i class="icon-arrow-right pagination__icon"></i>
+            </div>
+        </div>
+    </section>
+
+
     <section id="section-postback" class="sections sections--first col-lg-10 col-sm-12">
         <div class="sections__container sections__container--fluid">
             <div class="sections__row sections__row--header">
@@ -557,7 +642,7 @@
         <div class="modal" id="quit">
             <p class="section-header">Do you really want to Quit?</p>
             <hr class="sections__hr">
-            <div class="sections__row sections__row--right">
+            <div class="sections__row">
                 <button class="button button--grey js--close-modal">Cancel</button>
                 <button class="button js--close-modal">Quit</button>
             </div>
@@ -577,66 +662,63 @@
             <p class="page-header">Add banners</p>
             <div class="modal__btn-close js--close-modal">x</div>
             <hr class="sections__hr">
-           
-                <div class="form__row">
-                    <div class="form__item ">
-                        <label class="input__label" for="name">Scheme name</label>
-                        <select class="input" name="type">
-                            <option value="0" disabled selected hidden>Name</option>
-                            <option value="main">Main</option>
-                            <option value="eden">Eden</option>
-                        </select>
-                    </div>
-                    <div class="form__item ">
-                        <label class="input__label" for="name">Compain</label>
-                        <select class="input" name="type">
-                            <option value="0" disabled selected hidden>Select</option>
-                            <option value="one">One</option>
-                            <option value="two">Two</option>
-                        </select>
-                    </div>
-                    <div class="form__item form__item--last form__item--small ">
-                        <label class="input__label" for="name">Lanquage</label>
-                        <select class="input input--small" name="type">
-                            <option value="en">EN</option>
-                            <option value="pl">PL</option>
-                        </select>
-                    </div>
+
+            <div class="form__row">
+                <div class="form__item ">
+                    <label class="input__label" for="name">Scheme name</label>
+                    <select class="input" name="type">
+                        <option value="0" disabled selected hidden>Name</option>
+                        <option value="main">Main</option>
+                        <option value="eden">Eden</option>
+                    </select>
                 </div>
-            
-            
-                <div class="form__row">
-                    <div class="form__item ">
-                        <label class="input__label" for="name">Weigh-Height</label>
-                        <select class="input" name="type">
-                            <option value="0" disabled selected hidden>Select</option>
-                            <option value="small">Small</option>
-                            <option value="bold">Bold</option>
-                        </select>
-                    </div>
-                    <div class="form__item ">
-                        <label class="input__label" for="name">Design</label>
-                        <select class="input" name="type">
-                            <option value="0" disabled selected hidden>Select</option>
-                            <option value="flat">Flat</option>
-                            <option value="border">Border</option>
-                        </select>
-                    </div>
-                    <div class="form__item form__item--last ">
-                        <label class="input__label" for="name">File type</label>
-                        <select class="input" name="type">
-                            <option value="all">All</option>
-                            <option value="jpg">.jpg</option>
-                        </select>
-                    </div>
+                <div class="form__item ">
+                    <label class="input__label" for="name">Compain</label>
+                    <select class="input" name="type">
+                        <option value="0" disabled selected hidden>Select</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                    </select>
                 </div>
-            
+                <div class="form__item form__item--last form__item--small ">
+                    <label class="input__label" for="name">Lanquage</label>
+                    <select class="input input--small" name="type">
+                        <option value="en">EN</option>
+                        <option value="pl">PL</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__item ">
+                    <label class="input__label" for="name">Weigh-Height</label>
+                    <select class="input" name="type">
+                        <option value="0" disabled selected hidden>Select</option>
+                        <option value="small">Small</option>
+                        <option value="bold">Bold</option>
+                    </select>
+                </div>
+                <div class="form__item ">
+                    <label class="input__label" for="name">Design</label>
+                    <select class="input" name="type">
+                        <option value="0" disabled selected hidden>Select</option>
+                        <option value="flat">Flat</option>
+                        <option value="border">Border</option>
+                    </select>
+                </div>
+                <div class="form__item form__item--last ">
+                    <label class="input__label" for="name">File type</label>
+                    <select class="input" name="type">
+                        <option value="all">All</option>
+                        <option value="jpg">.jpg</option>
+                    </select>
+                </div>
+            </div>
             <div class="form__row">
                 <div class="form__wrapper">
                     <p class="input__label">Select Banners</p>
                     <div class="form__wrapper--sliding">
                         <label class="checkbox">Banner mine
-                            <input type="checkbox" >
+                            <input type="checkbox">
                             <span class="checkbox__span"></span>
                         </label>
                         <label class="checkbox">Signup banner
@@ -696,13 +778,162 @@
                 </div>
             </div>
             <div class="form__row form__row--right">
-                    <input class="input"  type="text" width="500" name="link" placeholder="Generated link">
-                    <button class="button button--disabled js--close-modal">Copy Link</button>   
+                <input class="input input--max" type="text" width="500" name="link" placeholder="Generated link">
+                <button class="button button--disabled js--close-modal">Copy Link</button>
                 <button class="button js--close-modal">Save</button>
-
             </div>
         </div>
-
+        <div class="modal" id="add-links">
+            <p class="page-header">Add banners</p>
+            <div class="modal__btn-close js--close-modal">x</div>
+            <hr class="sections__hr">
+            <div class="form__row">
+                <div class="form__item ">
+                    <label class="input__label" for="name">Scheme name</label>
+                    <select class="input" name="type">
+                        <option value="0" disabled selected hidden>Name</option>
+                        <option value="main">Main</option>
+                        <option value="eden">Eden</option>
+                    </select>
+                </div>
+                <div class="form__item ">
+                    <label class="input__label" for="name">Compain</label>
+                    <select class="input" name="type">
+                        <option value="0" disabled selected hidden>Select</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                    </select>
+                </div>
+                <div class="form__item form__item--last form__item--small ">
+                    <label class="input__label" for="name">Lanquage</label>
+                    <select class="input input--small" name="type">
+                        <option value="en">EN</option>
+                        <option value="pl">PL</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__wrapper">
+                    <p class="input__label">Select Banners</p>
+                    <div class="form__wrapper--sliding">
+                        <div class="form__row form__row--left">
+                            <label class="checkbox">Main page
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">Top store
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">About
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                        </div>
+                        <div class="form__row form__row--left">
+                            <label class="checkbox">Wallet
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">Login
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">Botton banner
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                        </div>
+                        <div class="form__row form__row--left">
+                            <label class="checkbox">PopUp
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">MainTop
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">Footer
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                        </div>
+                        <div class="form__row form__row--left">
+                            <label class="checkbox">SuperWallet
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">AllBest
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">Voice
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                        </div>
+                        <div class="form__row form__row--left">
+                            <label class="checkbox">Basket
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">Images
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">BestPrice
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                        </div>
+                        <div class="form__row form__row--left">
+                            <label class="checkbox">ColMine
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">Ubert
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox">Asban
+                                <input type="checkbox">
+                                <span class="checkbox__span"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__row form__row--right">
+                <input class="input input--max" type="text" name="link" placeholder="Generated link">
+                <button class="button button--disabled js--close-modal">Copy Link</button>
+                <button class="button js--close-modal">Save</button>
+            </div>
+        </div>
+        <div class="modal" id="chat">
+            <p class="page-header">online chat with your personal manager</p>
+            <div class="modal__btn-close js--close-modal">x</div>
+            <hr class="sections__hr">
+            <div class="form__row form__row--left">
+                <img id="js--chat" class="menu__manager--image" src="images/managerchat.png" alt="">
+                <div class="form__item form__item--left">
+                    <p class="chat__manager">Michael E.</p>
+                    <div class="chat__online">online</div>
+                </div>
+            </div>
+            <hr class="sections__hr">
+            <div class="form__row form__row--left">
+                <div class="form__item form__item--left chat__wrapper">
+                    <div class="chat__massage-manager">Hallo can i help you?</div>
+                    <div class="chat__massage-client">Hallo! I would like to know about Postback</div>
+                    <div class="chat__massage-manager">OK. 5 min.</div>
+                </div>
+            </div>
+            <hr class="sections__hr">
+            <div class="form__row form__row--right">
+                    <input class="input input--max" type="text"  name="message" placeholder="Enter the message">
+                    <button class="button js--close-modal">Send</button>
+            </div>
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>

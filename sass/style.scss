@@ -15,6 +15,7 @@
 @import "./sass/components/pagination";
 @import "./sass/components/modal";
 @import "./sass/sections/form";
+@import "./sass/sections/chat";
 
 * {
   font-family: $brand-font;
@@ -62,6 +63,9 @@ body {
     }
     &--right {
       justify-content: flex-end;
+    }
+    &--left {
+      justify-content: flex-start;
     }
     &--space {
       justify-content: space-around;
