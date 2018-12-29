@@ -476,7 +476,7 @@ template { display: none; }
 
 .form__wrapper { display: block; width: 100%; padding: 15px; margin: 20px 0; border: 1px solid #e3e3e3; height: 250px; }
 
-.form__wrapper--sliding { height: 200px; }
+.form__wrapper--sliding { overflow-x: auto; height: 200px; }
 
 @media (max-width: 767px) { .form { width: auto; }
   .form__row { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
