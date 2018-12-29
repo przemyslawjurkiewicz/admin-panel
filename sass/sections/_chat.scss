@@ -1,0 +1,63 @@
+@mixin massage {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px;
+  color: $dark;
+  border-radius: 10px;
+  font-size: $normal-font-size;
+}
+@mixin before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+}
+
+.chat {
+  &__online {
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background: $green;
+    font-size: $small-font-size;
+    min-width: 0;
+    height: auto;
+  }
+  &__manager {
+    color: $dark;
+    font-size: $normal-font-size;
+    font-weight: 700;
+  }
+  &__wrapper{
+      height: 250px;
+      overflow-x: auto;
+  }
+  &__massage-manager {
+    @include massage;
+    background-color: $lavender-light;
+    border: 1px solid $lavender-light;
+    &:before {
+      @include before;
+      border-top: 16px solid $lavender-light;
+      top: -10px;
+      left: -9px;
+      transform: rotate(-90deg);
+    }
+  }
+  &__massage-client {
+    @include massage;
+    background-color: $grey-light;
+    border: 1px solid $grey-light;
+    &:before {
+      @include before;
+      border-top: 16px solid $grey-light;
+      bottom: -1px;
+      right: -9px;
+      transform: rotate(90deg);
+    }
+  }
+}
